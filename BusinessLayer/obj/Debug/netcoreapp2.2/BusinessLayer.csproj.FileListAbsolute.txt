@@ -1,0 +1,16 @@
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BusinessLayer\bin\Debug\netcoreapp2.2\BusinessLayer.deps.json
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BusinessLayer\bin\Debug\netcoreapp2.2\BusinessLayer.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BusinessLayer\bin\Debug\netcoreapp2.2\BusinessLayer.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BusinessLayer\bin\Debug\netcoreapp2.2\DataAccessLayer.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BusinessLayer\bin\Debug\netcoreapp2.2\Entities.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BusinessLayer\bin\Debug\netcoreapp2.2\Helper.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BusinessLayer\bin\Debug\netcoreapp2.2\DataAccessLayer.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BusinessLayer\bin\Debug\netcoreapp2.2\Helper.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BusinessLayer\bin\Debug\netcoreapp2.2\Entities.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BusinessLayer\obj\Debug\netcoreapp2.2\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BusinessLayer\obj\Debug\netcoreapp2.2\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BusinessLayer\obj\Debug\netcoreapp2.2\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BusinessLayer\obj\Debug\netcoreapp2.2\BusinessLayer.AssemblyInfo.cs
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BusinessLayer\obj\Debug\netcoreapp2.2\BusinessLayer.csproj.CopyComplete
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BusinessLayer\obj\Debug\netcoreapp2.2\BusinessLayer.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BusinessLayer\obj\Debug\netcoreapp2.2\BusinessLayer.pdb

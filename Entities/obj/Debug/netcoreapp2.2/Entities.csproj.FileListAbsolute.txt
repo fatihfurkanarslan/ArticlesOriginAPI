@@ -1,0 +1,9 @@
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\Entities\bin\Debug\netcoreapp2.2\Entities.deps.json
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\Entities\bin\Debug\netcoreapp2.2\Entities.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\Entities\bin\Debug\netcoreapp2.2\Entities.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\Entities\obj\Debug\netcoreapp2.2\Entities.csprojAssemblyReference.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\Entities\obj\Debug\netcoreapp2.2\Entities.csproj.CoreCompileInputs.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\Entities\obj\Debug\netcoreapp2.2\Entities.AssemblyInfoInputs.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\Entities\obj\Debug\netcoreapp2.2\Entities.AssemblyInfo.cs
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\Entities\obj\Debug\netcoreapp2.2\Entities.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\Entities\obj\Debug\netcoreapp2.2\Entities.pdb

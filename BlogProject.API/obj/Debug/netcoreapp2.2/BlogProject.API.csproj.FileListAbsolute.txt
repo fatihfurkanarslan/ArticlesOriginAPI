@@ -1,0 +1,102 @@
+C:\Users\Serhat\Desktop\BlogProject.API\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.deps.json
+C:\Users\Serhat\Desktop\BlogProject.API\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.runtimeconfig.json
+C:\Users\Serhat\Desktop\BlogProject.API\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.runtimeconfig.dev.json
+C:\Users\Serhat\Desktop\BlogProject.API\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.dll
+C:\Users\Serhat\Desktop\BlogProject.API\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.pdb
+C:\Users\Serhat\Desktop\BlogProject.API\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.csprojAssemblyReference.cache
+C:\Users\Serhat\Desktop\BlogProject.API\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.csproj.CoreCompileInputs.cache
+C:\Users\Serhat\Desktop\BlogProject.API\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.RazorAssemblyInfo.cache
+C:\Users\Serhat\Desktop\BlogProject.API\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.RazorAssemblyInfo.cs
+C:\Users\Serhat\Desktop\BlogProject.API\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.AssemblyInfoInputs.cache
+C:\Users\Serhat\Desktop\BlogProject.API\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.AssemblyInfo.cs
+C:\Users\Serhat\Desktop\BlogProject.API\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.RazorTargetAssemblyInfo.cache
+C:\Users\Serhat\Desktop\BlogProject.API\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.dll
+C:\Users\Serhat\Desktop\BlogProject.API\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.deps.json
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.runtimeconfig.json
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.runtimeconfig.dev.json
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\DataAccessLayer.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\Entities.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\DataAccessLayer.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\Entities.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.csprojAssemblyReference.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.csproj.CoreCompileInputs.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.RazorAssemblyInfo.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.RazorAssemblyInfo.cs
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.AssemblyInfoInputs.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.AssemblyInfo.cs
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.RazorTargetAssemblyInfo.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.csproj.CopyComplete
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BusinessLayer.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\MyBranch\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BusinessLayer.pdb
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.deps.json
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.runtimeconfig.json
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.runtimeconfig.dev.json
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.dll
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.pdb
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BusinessLayer.dll
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\DataAccessLayer.dll
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\Entities.dll
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BusinessLayer.pdb
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\DataAccessLayer.pdb
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\Entities.pdb
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.csprojAssemblyReference.cache
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.csproj.CoreCompileInputs.cache
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.RazorAssemblyInfo.cache
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.RazorAssemblyInfo.cs
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.AssemblyInfoInputs.cache
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.AssemblyInfo.cs
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.RazorTargetAssemblyInfo.cache
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.csproj.CopyComplete
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.dll
+C:\Users\Serhat\Desktop\Yeni klasör (2)\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.deps.json
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.runtimeconfig.json
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.runtimeconfig.dev.json
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BusinessLayer.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\DataAccessLayer.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\Entities.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\Helper.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BusinessLayer.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\DataAccessLayer.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\Helper.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\Entities.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.csprojAssemblyReference.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.csproj.CoreCompileInputs.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.RazorAssemblyInfo.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.RazorAssemblyInfo.cs
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.AssemblyInfoInputs.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.AssemblyInfo.cs
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.RazorTargetAssemblyInfo.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.csproj.CopyComplete
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.deps.json
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.runtimeconfig.json
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.runtimeconfig.dev.json
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BlogProject.API.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BusinessLayer.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\DataAccessLayer.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\Entities.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\Helper.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\BusinessLayer.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\DataAccessLayer.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\Helper.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\bin\Debug\netcoreapp2.2\Entities.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.csprojAssemblyReference.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.csproj.CoreCompileInputs.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.RazorAssemblyInfo.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.RazorAssemblyInfo.cs
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.AssemblyInfoInputs.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.AssemblyInfo.cs
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.RazorTargetAssemblyInfo.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.csproj.CopyComplete
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\Yeni klasör\BlogProject\BlogProject\BlogProject.API\obj\Debug\netcoreapp2.2\BlogProject.API.pdb
