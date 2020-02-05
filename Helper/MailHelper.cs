@@ -51,9 +51,9 @@ namespace Helper
                     result = true;
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                throw ex;
             }
 
             return result;

@@ -55,8 +55,8 @@ namespace BusinessLayer
 
             User checkUser = await userRepository.GetAsync(x => x.UserName == registerModel.username || x.Email == registerModel.email);
 
-            if (checkUser == null)
-            {
+            //if (checkUser == null)
+            //{
                 CreatePasswordHash(registerModel.password, out passwordHash, out passwordSalt);
 
                 var check = userRepository.Insert(new User
@@ -82,11 +82,11 @@ namespace BusinessLayer
                 }
                 return null;
 
-            }
-            else
-            {
-                return null;
-            }
+            //}
+            //else
+            //{
+            //    return null;
+            //}
 
           
         }

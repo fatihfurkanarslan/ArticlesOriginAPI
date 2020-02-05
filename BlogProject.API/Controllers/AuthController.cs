@@ -39,7 +39,6 @@ namespace BlogProject.API.Controllers
         
         }
         
-        [Authorize]
         [HttpGet("activateuser/{id}")]
         public async Task<ActionResult> Activate(Guid id)
         {

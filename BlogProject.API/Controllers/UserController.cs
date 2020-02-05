@@ -54,7 +54,11 @@ namespace BlogProject.API.Controllers
                 user.FirstName = model.Firstname;
                 user.LastName = model.Lastname;
                 user.Description = model.Description;
-                user.Photourl = model.PhotoUrl;
+                if(model.PhotoUrl != user.Photourl || model.PhotoUrl != null)
+                {
+                    user.Photourl = model.PhotoUrl;
+                }
+       
             }
 
             var returnValue = await userManager.Update(user);
