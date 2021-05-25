@@ -11,6 +11,8 @@ namespace BusinessLayer
 {
     public class UserManager
     {
+
+        //mail helper must being interface, too
         MailHelper mailHelper;
         IRepository<User> userRepository;
 
