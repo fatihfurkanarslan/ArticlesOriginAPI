@@ -55,11 +55,11 @@
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[7.0.0, )"
             },
             "CloudinaryDotNet": {
               "target": "Package",
-              "version": "[1.6.0, )"
+              "version": "[1.7.0, )"
             },
             "Microsoft.AspNetCore": {
               "target": "Package",
@@ -108,7 +108,7 @@
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
-              "version": "[6.11.0, )"
+              "version": "[6.11.1, )"
             },
             "Microsoft.NETCore.App": {
               "target": "Package",
@@ -120,11 +120,11 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[3.1.0, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
-              "version": "[4.5.1, )"
+              "version": "[4.7.0, )"
             }
           },
           "imports": [
@@ -264,7 +264,7 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.2.4, )"
+              "version": "[3.1.0, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
@@ -396,11 +396,11 @@
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[7.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.2.4, )"
+              "version": "[3.1.0, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
