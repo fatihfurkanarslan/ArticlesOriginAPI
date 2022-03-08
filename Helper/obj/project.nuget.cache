@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GzeTo1AratiWJiJZs0Xi7r00hCdDcRV9kTTsps0FJBc0CwSmJt1EjQfYmFWQQgqPxsxN/PPPrTjHXzLiMuEOTw==",
+  "dgSpecHash": "1YwYnQWGyuI7Eurc2Br6+qoAMrXsYSICMCG3yA4e7JE59d7Fno8O0LYvo+gWH1+E+jNzpsg06mLzqgPvOOWH1A==",
   "success": true,
   "projectFilePath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Helper\\Helper.csproj",
   "expectedPackageFiles": [
@@ -72,6 +72,9 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\2.0.0\\microsoft.netcore.targets.2.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\nlog\\4.7.14\\nlog.4.7.14.nupkg.sha512",
+    "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\nlog.extensions.logging\\1.7.4\\nlog.extensions.logging.1.7.4.nupkg.sha512",
+    "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\nlog.web.aspnetcore\\4.14.0\\nlog.web.aspnetcore.4.14.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\system.collections.immutable\\1.7.0\\system.collections.immutable.1.7.0.nupkg.sha512",
     "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",

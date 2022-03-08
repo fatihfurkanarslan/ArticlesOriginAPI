@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ using BusinessLayer;
 using DataAccessLayer;
 using Entities;
 using Helper;
+using Helper.Logging;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -20,6 +22,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using NLog;
 
 namespace BlogProject.API
 {
@@ -27,6 +30,7 @@ namespace BlogProject.API
     {
         public Startup(IConfiguration configuration)
         {
+            LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/NLog.config"));
             Configuration = configuration;
         }
 
@@ -58,7 +62,7 @@ namespace BlogProject.API
             //services.AddAutoMapper();
 
             //services.AddControllers();
-            services.AddAutoMapper();
+            services.AddAutoMapper(typeof(Startup).Assembly);
             services.AddScoped<IRepository<User>, Repository<User>>();
             services.AddScoped<IRepository<Comment>, Repository<Comment>>();
             services.AddScoped<IRepository<Tag>, Repository<Tag>>();
@@ -66,7 +70,8 @@ namespace BlogProject.API
             services.AddScoped<IRepository<Note>, Repository<Note>>();
             services.AddScoped<IRepository<Photo>, Repository<Photo>>();
             services.AddScoped<IRepository<Like>, Repository<Like>>();
-
+            //LoggerManager includes Nlog Ilogger object instance
+            services.AddScoped<ILoggerManager, LoggerManager>();
 
             services.AddScoped(typeof(CommentManager));       
             services.AddScoped(typeof(UserManager));
@@ -78,8 +83,9 @@ namespace BlogProject.API
             services.AddScoped(typeof(MailHelper));
             services.AddScoped(typeof(BlogContext));
             services.AddTransient<MyInitiliazer>();
+            
 
-
+         
             // appsettings den okumak için startup da configure etmek gerekiyor.
             services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
 

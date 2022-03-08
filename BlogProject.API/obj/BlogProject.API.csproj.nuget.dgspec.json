@@ -122,6 +122,10 @@
               "target": "Package",
               "version": "[3.1.0, )"
             },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.14, )"
+            },
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[4.7.0, )"
@@ -407,6 +411,14 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[4.7.14, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.14.0, )"
             }
           },
           "imports": [

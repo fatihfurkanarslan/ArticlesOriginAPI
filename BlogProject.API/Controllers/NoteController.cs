@@ -10,6 +10,7 @@ using CloudinaryDotNet.Actions;
 using Entities;
 using Entities.Dtos;
 using Helper;
+using Helper.Logging;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
@@ -23,14 +24,17 @@ namespace BlogProject.API.Controllers
     {
         private readonly NoteManager noteManager;
         private readonly IMapper mapper;
+        //LoggerManager includes Nlog 
+        private ILoggerManager logger;
 
         private readonly IOptions<CloudinarySettings> cloudinaryConfig;
         private Cloudinary _cloudinary;
 
-        public NoteController(NoteManager _noteManager, IMapper _mapper, IOptions<CloudinarySettings> _cloudinaryConfig)
+        public NoteController(NoteManager _noteManager, IMapper _mapper, IOptions<CloudinarySettings> _cloudinaryConfig, ILoggerManager _logger)
         {
             noteManager = _noteManager;
             mapper = _mapper;
+            logger = _logger;
 
             cloudinaryConfig = _cloudinaryConfig;
 
@@ -68,6 +72,8 @@ namespace BlogProject.API.Controllers
         [HttpGet("getnotes")]
         public async Task<IActionResult> GetNotes([FromQuery]NoteParams noteParams)
         {
+            //logging test
+            logger.LogInfo("it works!!");
             var notes = await noteManager.GetNotesByDescending(noteParams);
 
             Response.AddPagination(notes.CurrentPage, notes.PageSize, notes.TotalCount, notes.TotalPages);
