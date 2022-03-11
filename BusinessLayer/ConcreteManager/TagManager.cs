@@ -1,4 +1,5 @@
 ﻿using DataAccessLayer;
+using DataAccessLayer.UnitOfWork;
 using Entities;
 using System;
 using System.Collections.Generic;
@@ -9,29 +10,31 @@ namespace BusinessLayer
 {
     public class TagManager
     {
-        IRepository<Tag> tagRepository;
-        public TagManager(IRepository<Tag> _tagRepository)
+        //IRepository<Tag> tagRepository;
+        IUnitOfWork unitOfWork;
+        public TagManager(IUnitOfWork _unitOfWork)
         {
-            tagRepository = _tagRepository;
+            // tagRepository = _tagRepository;
+            unitOfWork = _unitOfWork;
         }
 
         public List<Tag> GetTags(int id)
         {
             // var returnValues = await tagRepository.IncludeAsync(x => x.NoteId == id);
-            var returnValues = tagRepository.FindList(x => x.NoteId == id);
+            var returnValues = unitOfWork.Tag.FindList(x => x.NoteId == id);
             return returnValues;
         }
 
         public List<Tag> GetNotesByTag(string str)
         {
-            var returnValues = tagRepository.FindList(x => x.Tags == str, "Note").Result;
+            var returnValues = unitOfWork.Tag.FindList(x => x.Tags == str, "Note").Result;
             return returnValues;
         }
 
 
         public async Task<int> Insert(Tag tag)
         {
-            return await tagRepository.Insert(tag);
+            return await unitOfWork.Tag.Insert(tag);
         }
 
 

@@ -1,4 +1,5 @@
 ﻿using DataAccessLayer;
+using DataAccessLayer.UnitOfWork;
 using Entities;
 using System;
 using System.Collections.Generic;
@@ -10,16 +11,18 @@ namespace BusinessLayer
 {
     public class LikeManager
     {
-        IRepository<Like> likeRepository;
-        public LikeManager(IRepository<Like> _likeRepository)
+        //IRepository<Like> likeRepository;
+        IUnitOfWork unitOfWork;
+        public LikeManager(IUnitOfWork _unitOfWork)
         {
-            likeRepository = _likeRepository;
+            //likeRepository = _likeRepository;
+            unitOfWork = _unitOfWork;
         }
 
         public List<int> GetLikes(int userId, int[] likeIds)
         {
 
-            List<int> likes = likeRepository.FindList(x => x.User.Id == userId && likeIds.Contains(x.Note.Id)).Select(x => x.Note.Id).ToList();
+            List<int> likes = unitOfWork.Like.FindList(x => x.User.Id == userId && likeIds.Contains(x.Note.Id)).Select(x => x.Note.Id).ToList();
 
             return likes;
         }
@@ -27,12 +30,12 @@ namespace BusinessLayer
 
         public async Task<int> Insert(Like like)
         {
-            return await likeRepository.Insert(like);
+            return await unitOfWork.Like.Insert(like);
         }
 
         public async Task<int> Delete(Like like)
         {
-            return await likeRepository.Remove(like);
+            return await unitOfWork.Like.Remove(like);
         }
     }
 }

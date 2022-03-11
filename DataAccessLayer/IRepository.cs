@@ -17,13 +17,7 @@ namespace DataAccessLayer
         Task<T> GetIncludeAsync(Expression<Func<T, bool>> filter, params string[] includetables);
 
         Task<List<T>> GetListAsync();
-
-        Task<PagedList<T>> GetListAsyncForNote(NoteParams noteParams);
-
-        Task<PagedList<T>> IncludeAsyncForNote(NoteParams noteParams, Expression<Func<T, object>> includeFilter);
-
-        Task<PagedList<T>> IncludeAsyncForNoteByDescending(NoteParams noteParams, Expression<Func<T, object>> includeFilter, Expression<Func<T, object>> descendingFilter);
-
+ 
         List<T> FindList(Expression<Func<T, bool>> filter);
 
         Task<List<T>> IncludeAsync(Expression<Func<T, object>> includeFilter);
@@ -36,6 +30,6 @@ namespace DataAccessLayer
 
         Task<List<T>> FindList(Expression<Func<T, bool>> filter, params string[] includetables);
 
-        Task<List<T>> FindPopularNotes(Expression<Func<T, bool>> filter, params string[] includetables);
+       
     }
 }

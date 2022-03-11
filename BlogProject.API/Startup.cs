@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using BusinessLayer;
 using DataAccessLayer;
+using DataAccessLayer.UnitOfWork;
 using Entities;
 using Helper;
 using Helper.Logging;
@@ -70,8 +71,10 @@ namespace BlogProject.API
             services.AddScoped<IRepository<Note>, Repository<Note>>();
             services.AddScoped<IRepository<Photo>, Repository<Photo>>();
             services.AddScoped<IRepository<Like>, Repository<Like>>();
-            //LoggerManager includes Nlog Ilogger object instance
+            //LoggerManager includes Nlog Ilogger object instance.
             services.AddScoped<ILoggerManager, LoggerManager>();
+            //unitofwork scoped is added here.
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             services.AddScoped(typeof(CommentManager));       
             services.AddScoped(typeof(UserManager));

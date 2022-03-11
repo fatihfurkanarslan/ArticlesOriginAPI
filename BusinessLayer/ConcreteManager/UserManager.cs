@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Entities.Dtos;
 using Helper;
+using DataAccessLayer.UnitOfWork;
 
 namespace BusinessLayer
 {
@@ -14,32 +15,33 @@ namespace BusinessLayer
 
         //mail helper must being interface, too
         MailHelper mailHelper;
-        IRepository<User> userRepository;
+        //IRepository<User> userRepository;
+        IUnitOfWork unitOfWork;
 
-        public UserManager(IRepository<User> _userRepository, MailHelper _mailHelper)
+        public UserManager(IUnitOfWork _unitOfWork, MailHelper _mailHelper)
         {
-            userRepository = _userRepository;
+            unitOfWork = _unitOfWork;
             mailHelper = _mailHelper;
         }
 
         public async Task<User> GetUser(int id)
         {
-            return await userRepository.GetAsync(x => x.Id == id);
+            return await unitOfWork.User.GetAsync(x => x.Id == id);
         }
 
         public async Task<int> Update(User user)
         {
-            return await userRepository.Update(user);
+            return await unitOfWork.User.Update(user);
         }
 
         public async Task<List<User>> GetUsers()
         {
-            return await userRepository.GetListAsync();
+            return await unitOfWork.User.GetListAsync();
         }
 
         public async Task<User> Login(UserForLoginModel userModel)
         {
-                User user = await userRepository.GetAsync(x => x.UserName == userModel.username.ToLower());
+                User user = await unitOfWork.User.GetAsync(x => x.UserName == userModel.username.ToLower());
 
                 if (user != null)
                 {
@@ -55,13 +57,13 @@ namespace BusinessLayer
         {
             byte[] passwordSalt, passwordHash;
 
-            User checkUser = await userRepository.GetAsync(x => x.UserName == registerModel.username || x.Email == registerModel.email);
+            User checkUser = await unitOfWork.User.GetAsync(x => x.UserName == registerModel.username || x.Email == registerModel.email);
 
             //if (checkUser == null)
             //{
                 CreatePasswordHash(registerModel.password, out passwordHash, out passwordSalt);
 
-                var check = userRepository.Insert(new User
+                var check = unitOfWork.User.Insert(new User
                 {
                     UserName = registerModel.username,
                     Email = registerModel.email,
@@ -73,7 +75,7 @@ namespace BusinessLayer
 
                 if (check.Result > 0)
                 {
-                    User user = await userRepository.GetAsync(x => x.UserName == registerModel.username);
+                    User user = await unitOfWork.User.GetAsync(x => x.UserName == registerModel.username);
 
                     string activeUri = $"http://localhost:4200/useractivate/{user.ActivatedGuid}";
 
@@ -96,7 +98,7 @@ namespace BusinessLayer
 
         public async Task<User> ActivateUser(Guid activateId)
         {
-            User user = await userRepository.GetAsync(x => x.ActivatedGuid == activateId);
+            User user = await unitOfWork.User.GetAsync(x => x.ActivatedGuid == activateId);
 
             if( user != null)
             {
@@ -106,7 +108,7 @@ namespace BusinessLayer
                 }
 
                 user.IsActive = true;
-                await userRepository.Update(user);
+                await unitOfWork.User.Update(user);
             }
             return user;
         }

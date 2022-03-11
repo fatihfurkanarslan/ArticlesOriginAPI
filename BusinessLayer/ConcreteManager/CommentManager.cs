@@ -1,4 +1,5 @@
 ﻿using DataAccessLayer;
+using DataAccessLayer.UnitOfWork;
 using Entities;
 using System;
 using System.Collections.Generic;
@@ -9,36 +10,38 @@ namespace BusinessLayer
 {
     public class CommentManager
     {
-        IRepository<Comment> commentRepository;
-        public CommentManager(IRepository<Comment> _commentRepository)
+        //IRepository<Comment> commentRepository;
+        IUnitOfWork unitOfWork;
+        public CommentManager(IUnitOfWork _unitOfWork)
         {
-            commentRepository = _commentRepository;
+            //commentRepository = _commentRepository;
+            unitOfWork = _unitOfWork;
         }
 
         public async Task<List<Comment>> GetComments()
         {
-            var returnValues = await commentRepository.GetListAsync();
-            return returnValues;
+            return await unitOfWork.Comment.GetListAsync();
+           
         }
         public async Task<Comment> GetComment(int id)
         {
-            var returnValue = await commentRepository.GetAsync(x => x.Id == id);
+            var returnValue = await unitOfWork.Comment.GetAsync(x => x.Id == id);
             return returnValue;
         }
 
         public async Task<int> Insert(Comment comment)
         {
-            return await commentRepository.Insert(comment);
+            return await unitOfWork.Comment.Insert(comment);
         }
 
         public async Task<int> Update(Comment comment)
         {
-            return await commentRepository.Update(comment);
+            return await unitOfWork.Comment.Update(comment);
         }
 
         public async Task<int> Delete(Comment comment)
         {
-            return await commentRepository.Remove(comment);
+            return await unitOfWork.Comment.Remove(comment);
         }
     }
 }
