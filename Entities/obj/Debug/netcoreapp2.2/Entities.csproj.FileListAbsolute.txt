@@ -15,3 +15,5 @@ C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\Ar
 C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\netcoreapp2.2\Entities.csproj.CoreCompileInputs.cache
 C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\netcoreapp2.2\Entities.dll
 C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\netcoreapp2.2\Entities.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\netcoreapp2.2\Entities.csproj.AssemblyReference.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\netcoreapp2.2\Entities.GeneratedMSBuildEditorConfig.editorconfig

@@ -15,10 +15,11 @@ C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\Ar
 C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Helper\bin\Debug\netcoreapp2.2\Helper.pdb
 C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Helper\bin\Debug\netcoreapp2.2\Entities.dll
 C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Helper\bin\Debug\netcoreapp2.2\Entities.pdb
-C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Helper\obj\Debug\netcoreapp2.2\Helper.csprojAssemblyReference.cache
 C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Helper\obj\Debug\netcoreapp2.2\Helper.AssemblyInfoInputs.cache
 C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Helper\obj\Debug\netcoreapp2.2\Helper.AssemblyInfo.cs
 C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Helper\obj\Debug\netcoreapp2.2\Helper.csproj.CoreCompileInputs.cache
 C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Helper\obj\Debug\netcoreapp2.2\Helper.csproj.CopyComplete
 C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Helper\obj\Debug\netcoreapp2.2\Helper.dll
 C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Helper\obj\Debug\netcoreapp2.2\Helper.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Helper\obj\Debug\netcoreapp2.2\Helper.csproj.AssemblyReference.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Helper\obj\Debug\netcoreapp2.2\Helper.GeneratedMSBuildEditorConfig.editorconfig
