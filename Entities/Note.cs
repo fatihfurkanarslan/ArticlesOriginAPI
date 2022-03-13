@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Entities
@@ -7,6 +8,9 @@ namespace Entities
     public class Note
     {
         public int Id { get; set; }
+
+        [Required(ErrorMessage = "Title field is a required.")]
+        [MaxLength(60, ErrorMessage = "Maximum length is 60 characters for title you text")]
         public string Title { get; set; }
         public string Description { get; set; }
         public string Text { get; set; }
