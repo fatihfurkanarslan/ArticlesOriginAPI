@@ -95,7 +95,7 @@ namespace BlogProject.API.Controllers
 
         [HttpGet("getpopularnotes")]
         public IActionResult GetPopularNotes()
-        {
+        {   
             var popularNotes = noteManager.GetPopsularNotes();
 
             // var categoryToReturn = mapper.Map<UserDetailModel>(category);

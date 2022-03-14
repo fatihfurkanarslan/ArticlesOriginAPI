@@ -10,6 +10,7 @@ using DataAccessLayer;
 using DataAccessLayer.UnitOfWork;
 using Entities;
 using Helper;
+using Helper.ErrorHandler;
 using Helper.Logging;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -107,7 +108,8 @@ namespace BlogProject.API
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, MyInitiliazer seeder)
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, MyInitiliazer seeder, ILoggerManager logger)
         {
             if (env.IsDevelopment())
             {
@@ -118,6 +120,8 @@ namespace BlogProject.API
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            //ConfigureExceptionHandler method is prepared in ErrorHandler folder to catch error and log them.
+            app.ConfigureExceptionHandler(logger);
             // seeder.Seed();
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             //app.UseHttpsRedirection();
