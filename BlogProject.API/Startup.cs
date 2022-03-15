@@ -11,6 +11,7 @@ using DataAccessLayer.UnitOfWork;
 using Entities;
 using Helper;
 using Helper.ErrorHandler;
+using Helper.Filters;
 using Helper.Logging;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -76,6 +77,8 @@ namespace BlogProject.API
             services.AddScoped<ILoggerManager, LoggerManager>();
             //unitofwork scoped is added here.
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            //filter class for validation
+            services.AddScoped<ValidationFilterAttribute>();
 
             services.AddScoped(typeof(CommentManager));       
             services.AddScoped(typeof(UserManager));

@@ -10,6 +10,7 @@ using CloudinaryDotNet.Actions;
 using Entities;
 using Entities.Dtos;
 using Helper;
+using Helper.Filters;
 using Helper.Logging;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -92,7 +93,7 @@ namespace BlogProject.API.Controllers
 
             return Ok(note);
         }
-
+        
         [HttpGet("getpopularnotes")]
         public IActionResult GetPopularNotes()
         {   
@@ -113,6 +114,7 @@ namespace BlogProject.API.Controllers
             return Ok(insertValue.Id);
         }
 
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost("insert")]
         public async Task<IActionResult> InsertNote(NoteInsertModel noteModel)
         {
@@ -182,6 +184,7 @@ namespace BlogProject.API.Controllers
             return Ok();
         }
 
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPut("update")]
         public async Task<IActionResult> UpdateNote(NoteUpdateModel noteModel)
         {
@@ -209,6 +212,7 @@ namespace BlogProject.API.Controllers
 
         }
 
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPut("updateImage")]
         public async Task<IActionResult> UpdateNoteImage(NoteUpdateModel noteModel)
         {
