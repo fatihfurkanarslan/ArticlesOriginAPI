@@ -299,3 +299,5 @@ C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\Ar
 C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\BlogProject.API\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\BlogProject.API\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\BlogProject.API\obj\Debug\net6.0\scopedcss\bundle\BlogProject.API.styles.css
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\BlogProject.API\obj\Debug\net6.0\BlogProject.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\BlogProject.API\bin\Debug\net6.0\Marvin.Cache.Headers.dll

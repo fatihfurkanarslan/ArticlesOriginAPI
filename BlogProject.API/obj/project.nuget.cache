@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RSoWEz0lCqt4bfnQwLlkdnxFrA7yYlWBiqXC87Jn8IWLRlGLB/ocEwl919VEW10xegIiGXJ5s0l1uyd7C4rT3A==",
+  "dgSpecHash": "JsTp+a2WmlDtI1f4hM0LyDLm29EJxwv8isDADLbN/2NUUjJAIe6cTtKLZHUY694pDTfjsTeRyo9gdCSoL7/RoA==",
   "success": true,
   "projectFilePath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BlogProject.API\\BlogProject.API.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\cloudinarydotnet\\1.17.0\\cloudinarydotnet.1.17.0.nupkg.sha512",
     "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\marvin.cache.headers\\6.0.0\\marvin.cache.headers.6.0.0.nupkg.sha512",
     "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",

@@ -12,6 +12,7 @@ using Entities.Dtos;
 using Helper;
 using Helper.Filters;
 using Helper.Logging;
+using Marvin.Cache.Headers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
@@ -58,6 +59,7 @@ namespace BlogProject.API.Controllers
             return Ok(notes);
         }
 
+
         [HttpGet("getnotesbyuser/{id}")]
         public IActionResult GetNoteByUser(int id)
         {
@@ -69,7 +71,12 @@ namespace BlogProject.API.Controllers
             return Ok(notes);
         }
 
-
+        //if it is public location, whenever cache duration is over, all new responses are added to public caching location,
+        //if it is not, responses store private location 
+        //cache location private that means allow to cache response
+        [HttpCacheExpiration(CacheLocation = CacheLocation.Public, MaxAge = 60)]
+        //Once the cache expires, refuse to return stale responses to the user even if they say that stale responses are acceptable.
+        [HttpCacheValidation(MustRevalidate = true)]
         [HttpGet("getnotes")]
         public async Task<IActionResult> GetNotes([FromQuery]NoteParams noteParams)
         {
@@ -94,6 +101,10 @@ namespace BlogProject.API.Controllers
             return Ok(note);
         }
         
+        //this is just a header which controls duration. It is not a cache store.
+        [ResponseCache(CacheProfileName = "120SecondsDuration")]
+        [HttpCacheExpiration(CacheLocation = CacheLocation.Public, MaxAge = 60)]
+        [HttpCacheValidation(MustRevalidate = true)]
         [HttpGet("getpopularnotes")]
         public IActionResult GetPopularNotes()
         {   
@@ -114,6 +125,7 @@ namespace BlogProject.API.Controllers
             return Ok(insertValue.Id);
         }
 
+        //modelstate.isvalid and errorhandling attribute
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost("insert")]
         public async Task<IActionResult> InsertNote(NoteInsertModel noteModel)
@@ -188,15 +200,8 @@ namespace BlogProject.API.Controllers
         [HttpPut("update")]
         public async Task<IActionResult> UpdateNote(NoteUpdateModel noteModel)
         {
-
             Note note = await noteManager.GetNote(noteModel.Id);
 
-            if (note == null)
-            {
-                return StatusCode(400);
-            }
-            else
-            {
                 note.MainPhotourl = noteModel.MainPhotourl;
 
                 note.Title = noteModel.Title;
@@ -207,9 +212,6 @@ namespace BlogProject.API.Controllers
                 int result = await noteManager.Update(note);
 
                 return Ok(result);
-            }
-
-
         }
 
         [ServiceFilter(typeof(ValidationFilterAttribute))]

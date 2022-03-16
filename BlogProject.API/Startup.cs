@@ -60,11 +60,21 @@ namespace BlogProject.API
             //db connection
             services.AddDbContext<BlogContext>(x => x.UseSqlServer(connection, b => b.MigrationsAssembly("BlogProject.API")));
 
+            //register response caching in the IOC 
+            services.AddResponseCaching();
+
+            //register marvin.cache.header service support like cache-control, expires, etag, and last-modified
+            services.AddHttpCacheHeaders();
             //created for dependency injection
 
             //services.AddAutoMapper();
 
-            //services.AddControllers();
+            services.AddControllers(config =>
+            {
+                config.RespectBrowserAcceptHeader = true;
+                //cache duration setter 
+                config.CacheProfiles.Add("120SecondsDuration", new CacheProfile { Duration = 120 });
+            });
             services.AddAutoMapper(typeof(Startup).Assembly);
             services.AddScoped<IRepository<User>, Repository<User>>();
             services.AddScoped<IRepository<Comment>, Repository<Comment>>();
@@ -130,6 +140,12 @@ namespace BlogProject.API
             //app.UseHttpsRedirection();
             //useauthentication methodu sayesinde
             app.UseAuthentication();
+
+            //to use response caching(to use response-caching attribute)
+            app.UseResponseCaching();
+
+            //marvin.cache.header supports like cache-control, expires, etag, last-modified
+            app.UseHttpCacheHeaders();
 
             //support on .core 2.2
             //app.UseMvc();
