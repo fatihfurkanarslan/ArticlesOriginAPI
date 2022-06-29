@@ -1,4 +1,5 @@
 ﻿using DataAccessLayer.AbstractRepositories;
+using Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,6 +16,7 @@ namespace DataAccessLayer.UnitOfWork
         IPhotoRepository Photo { get; }
         ITagRepository Tag { get; }
         IUserRepository User { get; }
+        IFollowerRepository Follower { get; }
 
         Task<int> CommitAsync();
         void Dispose();

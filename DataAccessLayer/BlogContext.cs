@@ -48,6 +48,7 @@ namespace DataAccessLayer
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Tag> Tags { get; set; }
+        public DbSet<Follower> Followers { get; set; }
 
     }
 }

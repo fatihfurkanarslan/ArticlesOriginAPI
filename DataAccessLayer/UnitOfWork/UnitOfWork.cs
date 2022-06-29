@@ -1,4 +1,5 @@
 ﻿using DataAccessLayer.AbstractRepositories;
+using DataAccessLayer.ConcreteRepositories;
 using DataAccessLayer.Repositories;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,7 @@ namespace DataAccessLayer.UnitOfWork
         private PhotoRepository _photoRepository;
         private TagRepository _tagRepository;
         private UserRepository _userRepository;
+        private FollowerRepository _followerRepository;
 
 
         public UnitOfWork(BlogContext _context)
@@ -39,6 +41,10 @@ namespace DataAccessLayer.UnitOfWork
         public ITagRepository Tag => _tagRepository = _tagRepository ?? new TagRepository(context);
 
         public IUserRepository User => _userRepository = _userRepository ?? new UserRepository(context);
+
+        public IFollowerRepository Follower => _followerRepository = _followerRepository ?? new FollowerRepository(context);
+
+ 
 
         public Task<int> CommitAsync()
         {
