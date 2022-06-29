@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using BusinessLayer;
+using BusinessLayer.AbstractManager;
 using Entities;
 using Entities.Dtos;
 using Microsoft.AspNetCore.Authorization;
@@ -16,10 +17,10 @@ namespace BlogProject.API.Controllers
     [ApiController]
     public class CommentController : Controller
     {
-        private readonly CommentManager commentManager;
+        private readonly ICommentManager commentManager;
         private readonly IMapper mapper;
 
-        public CommentController(CommentManager _commentManager, IMapper _mapper)
+        public CommentController(ICommentManager _commentManager, IMapper _mapper)
         {
             commentManager = _commentManager;
             mapper = _mapper;

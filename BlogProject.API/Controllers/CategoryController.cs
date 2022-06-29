@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using BusinessLayer;
+using BusinessLayer.AbstractManager;
 using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
 using Entities;

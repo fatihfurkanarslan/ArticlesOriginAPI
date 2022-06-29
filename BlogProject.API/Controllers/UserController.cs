@@ -25,7 +25,7 @@ namespace BlogProject.API.Controllers
         }
 
         [HttpGet("getuser/{id}")]
-        public async Task<IActionResult> GetUser(int id)
+        public async Task<IActionResult> GetUser(string id)
         {
             var user = await userManager.GetUser(id);
 

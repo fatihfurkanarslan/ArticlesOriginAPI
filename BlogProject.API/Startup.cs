@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using BusinessLayer;
+using BusinessLayer.AbstractManager;
 using DataAccessLayer;
 using DataAccessLayer.UnitOfWork;
 using Entities;
@@ -17,6 +18,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -58,7 +60,22 @@ namespace BlogProject.API
 
             string connection = @"Server=DESKTOP-LDVGTNI\SQLEXPRESS;Database=BlogProject;Trusted_Connection=True;MultipleActiveResultSets=true";
             //db connection
-            services.AddDbContext<BlogContext>(x => x.UseSqlServer(connection, b => b.MigrationsAssembly("BlogProject.API")));
+            services.AddDbContext<BlogContext>(options => options.UseSqlServer(connection,
+                b => b.MigrationsAssembly("BlogProject.API")
+                ));
+
+            //user settings
+            services.AddIdentity<User, IdentityRole>(
+             user =>
+             {
+                 user.Password.RequireDigit = true;
+                 user.Password.RequireLowercase = false;
+                 user.Password.RequireUppercase = false;
+                 user.Password.RequireNonAlphanumeric = false;
+                 user.Password.RequiredLength = 10;
+                 user.User.RequireUniqueEmail = true;
+             }).AddEntityFrameworkStores<BlogContext>();
+
 
             //register response caching in the IOC 
             services.AddResponseCaching();
@@ -90,7 +107,9 @@ namespace BlogProject.API
             //filter class for validation
             services.AddScoped<ValidationFilterAttribute>();
 
-            services.AddScoped(typeof(CommentManager));       
+            //services.AddScoped(typeof(CommentManager));
+            services.AddScoped<ICommentManager, CommentManager>();  
+
             services.AddScoped(typeof(UserManager));
             services.AddScoped(typeof(TagManager));
             services.AddScoped(typeof(CategoryManager));
@@ -100,9 +119,11 @@ namespace BlogProject.API
             services.AddScoped(typeof(MailHelper));
             services.AddScoped(typeof(BlogContext));
             services.AddTransient<MyInitiliazer>();
-            
 
          
+
+
+
             // appsettings den okumak için startup da configure etmek gerekiyor.
             services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
 
@@ -135,8 +156,9 @@ namespace BlogProject.API
             }
             //ConfigureExceptionHandler method is prepared in ErrorHandler folder to catch error and log them.
             app.ConfigureExceptionHandler(logger);
-            // seeder.Seed();
+             seeder.Seed();
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+        
             //app.UseHttpsRedirection();
             //useauthentication methodu sayesinde
             app.UseAuthentication();
@@ -153,10 +175,6 @@ namespace BlogProject.API
             //instead of app.UseMvc()
             app.UseRouting();
             app.UseEndpoints(endpoints => endpoints.MapControllers());
-
-      
-
-
         }
     }
 }

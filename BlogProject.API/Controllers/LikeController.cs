@@ -23,7 +23,7 @@ namespace BlogProject.API.Controllers
         }
 
         [HttpGet("getlikes")]
-        public IActionResult GetLikes(int userId, int[] likedNoteIds)
+        public IActionResult GetLikes(string userId, int[] likedNoteIds)
         {
 
             var likes = likeManager.GetLikes(userId, likedNoteIds);

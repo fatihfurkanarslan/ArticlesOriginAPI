@@ -24,7 +24,7 @@ namespace BusinessLayer
             mailHelper = _mailHelper;
         }
 
-        public async Task<User> GetUser(int id)
+        public async Task<User> GetUser(string id)
         {
             return await unitOfWork.User.GetAsync(x => x.Id == id);
         }
@@ -55,7 +55,8 @@ namespace BusinessLayer
 
         public async Task<User> Register(UserRegisterModel registerModel)
         {
-            byte[] passwordSalt, passwordHash;
+            byte[] passwordSalt;
+            string passwordHash;
 
             User checkUser = await unitOfWork.User.GetAsync(x => x.UserName == registerModel.username || x.Email == registerModel.email);
 
@@ -113,22 +114,25 @@ namespace BusinessLayer
             return user;
         }
              
-        public void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
+        public void CreatePasswordHash(string password, out string passwordHash, out byte[] passwordSalt)
         {
             using(var hmac = new System.Security.Cryptography.HMACSHA512()){
                 passwordSalt = hmac.Key;
-                passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+                passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password)).ToString();
             }
         }
 
-        private bool VerifyPassword(string password, byte[] passwordHash, byte[] passwordSalt)
+        //passwordHash is changed from byte[] to string 
+        //check out if it works with string
+        private bool VerifyPassword(string password, string passwordHash, byte[] passwordSalt)
         {
             using (var hmac = new System.Security.Cryptography.HMACSHA512(passwordSalt))
             {
                 var computedHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+                byte[] passHash = Encoding.ASCII.GetBytes(passwordHash);
                 for (int i = 0; i < computedHash.Length; i++)
                 {
-                    if (computedHash[i] != passwordHash[i])
+                    if (computedHash[i] != passHash[i])
                         return false;
                 }
                 return true;

@@ -19,7 +19,7 @@ namespace BusinessLayer
             unitOfWork = _unitOfWork;
         }
 
-        public List<int> GetLikes(int userId, int[] likeIds)
+        public List<int> GetLikes(string userId, int[] likeIds)
         {
 
             List<int> likes = unitOfWork.Like.FindList(x => x.User.Id == userId && likeIds.Contains(x.Note.Id)).Select(x => x.Note.Id).ToList();

@@ -18,7 +18,8 @@ namespace DataAccessLayer
 
         public void Seed()
         {
-            byte[] passwordHash, passwordSalt;
+            string passwordHash;
+            byte[] passwordSalt;
             CreatePasswordHash("password", out passwordHash, out passwordSalt);
 
             User user = new User
@@ -139,12 +140,12 @@ namespace DataAccessLayer
             context.SaveChanges();
         }
 
-        public void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
+        public void CreatePasswordHash(string password, out string passwordHash, out byte[] passwordSalt)
         {
             using (var hmac = new System.Security.Cryptography.HMACSHA512())
             {
                 passwordSalt = hmac.Key;
-                passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+                passwordHash = (hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password))).ToString();
             }
 
         }

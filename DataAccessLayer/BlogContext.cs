@@ -1,4 +1,5 @@
 ﻿using Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,8 @@ using System.Text;
 
 namespace DataAccessLayer
 {
-    public class BlogContext : DbContext
+    //after adding identity, identitydbcontext should be used instead of dbcontext
+    public class BlogContext : IdentityDbContext<User>
     {
         //dbcontext options is derived from basecontext
         public BlogContext(DbContextOptions<BlogContext> options) : base(options)
@@ -14,17 +16,32 @@ namespace DataAccessLayer
 
         }
 
-       // protected override void OnModelCreating(ModelBuilder modelBuilder)
-       // {
-       //     modelBuilder.Entity<Note>()
-       //.HasOne(b => b.Category)
-       //.WithMany(a => a.Notes)
-       //.IsRequired()
-       //.OnDelete(DeleteBehavior.SetNull);
-       // }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer("your_connection_string", builder =>
+        //    {
+        //        builder.EnableRetryOnFailure(5, TimeSpan.FromSeconds(10), null);
+        //    });
+        //    base.OnConfiguring(optionsBuilder);
+        //}
+
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //     base.OnModelCreating(modelBuilder);
+
+
+
+        ////     modelBuilder.Entity<Note>()
+        ////.HasOne(b => b.Category)
+        ////.WithMany(a => a.Notes)
+        ////.IsRequired()
+        ////.OnDelete(DeleteBehavior.SetNull);
+        //}
 
         //generetes dbsets which are instances of tables of db
-        public DbSet<User> Users { get; set; }
+
+        //identity db context support related user tables 
+        //public DbSet<User> Users { get; set; }
         public DbSet<Photo> Photos { get; set; }
         public DbSet<Note> Notes { get; set; }
         public DbSet<Like> Likes { get; set; }

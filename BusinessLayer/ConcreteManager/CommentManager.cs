@@ -1,4 +1,5 @@
-﻿using DataAccessLayer;
+﻿using BusinessLayer.AbstractManager;
+using DataAccessLayer;
 using DataAccessLayer.UnitOfWork;
 using Entities;
 using System;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer
 {
-    public class CommentManager
+    public class CommentManager : ICommentManager
     {
         //IRepository<Comment> commentRepository;
         IUnitOfWork unitOfWork;
