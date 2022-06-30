@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 using AutoMapper;
 using BusinessLayer;
 using BusinessLayer.AbstractManager;
+using BusinessLayer.ConcreteManager;
 using DataAccessLayer;
+using DataAccessLayer.AbstractRepositories;
 using DataAccessLayer.UnitOfWork;
 using Entities;
 using Helper;
@@ -28,6 +30,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using NLog;
+
 
 namespace BlogProject.API
 {
@@ -58,7 +61,7 @@ namespace BlogProject.API
                 );
 
 
-            string connection = @"Server=DESKTOP-LDVGTNI\SQLEXPRESS;Database=BlogProject;Trusted_Connection=True;MultipleActiveResultSets=true";
+            string connection = @"Server=BIM-FURKANA1\SQLEXPRESS;Database=BlogProject;Trusted_Connection=True;MultipleActiveResultSets=true";
             //db connection
             services.AddDbContext<BlogContext>(options => options.UseSqlServer(connection,
                 b => b.MigrationsAssembly("BlogProject.API")
@@ -100,6 +103,7 @@ namespace BlogProject.API
             services.AddScoped<IRepository<Note>, Repository<Note>>();
             services.AddScoped<IRepository<Photo>, Repository<Photo>>();
             services.AddScoped<IRepository<Like>, Repository<Like>>();
+            services.AddScoped<IRepository<Follower>, Repository<Follower>>();
             //LoggerManager includes Nlog Ilogger object instance.
             services.AddScoped<ILoggerManager, LoggerManager>();
             //unitofwork scoped is added here.
@@ -116,11 +120,15 @@ namespace BlogProject.API
             services.AddScoped(typeof(NoteManager));
             services.AddScoped(typeof(PhotoManager));
             services.AddScoped(typeof(LikeManager));
+            services.AddScoped(typeof(CommentManager));
+            services.AddScoped(typeof(FollowerManager));
             services.AddScoped(typeof(MailHelper));
             services.AddScoped(typeof(BlogContext));
             services.AddTransient<MyInitiliazer>();
 
-         
+
+            //addsignalr
+            services.AddSignalR();
 
 
 
@@ -156,7 +164,7 @@ namespace BlogProject.API
             }
             //ConfigureExceptionHandler method is prepared in ErrorHandler folder to catch error and log them.
             app.ConfigureExceptionHandler(logger);
-             seeder.Seed();
+            // seeder.Seed();
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
         
             //app.UseHttpsRedirection();
@@ -174,7 +182,17 @@ namespace BlogProject.API
 
             //instead of app.UseMvc()
             app.UseRouting();
-            app.UseEndpoints(endpoints => endpoints.MapControllers());
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+                //Burada NotificationHub gelen isteklerin yönetildiği sınıfı /notification ise sunucu adresini ifade eder.
+                endpoints.MapHub<NotificationHub>("/notification");
+            }
+           ) ;
+
+            
+            //signalr maphub
+            //app.MapHub<NotificationHub>("/Follower");
         }
     }
 }

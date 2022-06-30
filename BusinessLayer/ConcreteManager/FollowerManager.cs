@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.AbstractManager;
 using DataAccessLayer.UnitOfWork;
+using Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,12 @@ namespace BusinessLayer.ConcreteManager
         {
             unitOfWork = _unitOfWork;
 
+        }
+
+
+        public async Task<int> InsertFollower(Follower follower)
+        {
+            return await unitOfWork.Follower.Insert(follower);
         }
     }
 }

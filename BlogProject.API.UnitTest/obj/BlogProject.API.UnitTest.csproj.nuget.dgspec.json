@@ -1,26 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BlogProject.API.UnitTest\\BlogProject.API.UnitTest.csproj": {}
+    "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BlogProject.API.UnitTest\\BlogProject.API.UnitTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BlogProject.API.UnitTest\\BlogProject.API.UnitTest.csproj": {
+    "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BlogProject.API.UnitTest\\BlogProject.API.UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BlogProject.API.UnitTest\\BlogProject.API.UnitTest.csproj",
+        "projectUniqueName": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BlogProject.API.UnitTest\\BlogProject.API.UnitTest.csproj",
         "projectName": "BlogProject.API.UnitTest",
-        "projectPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BlogProject.API.UnitTest\\BlogProject.API.UnitTest.csproj",
-        "packagesPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BlogProject.API.UnitTest\\obj\\",
+        "projectPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BlogProject.API.UnitTest\\BlogProject.API.UnitTest.csproj",
+        "packagesPath": "C:\\Users\\farslan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BlogProject.API.UnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\farslan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -33,11 +35,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BlogProject.API\\BlogProject.API.csproj": {
-                "projectPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BlogProject.API\\BlogProject.API.csproj"
+              "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BlogProject.API\\BlogProject.API.csproj": {
+                "projectPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BlogProject.API\\BlogProject.API.csproj"
               },
-              "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }
@@ -54,7 +56,7 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.11.0, )"
+              "version": "[17.2.0, )"
             },
             "Moq": {
               "target": "Package",
@@ -64,7 +66,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.0, )"
+              "version": "[3.1.2, )"
             },
             "xunit": {
               "target": "Package",
@@ -74,7 +76,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.4.3, )"
+              "version": "[2.4.5, )"
             }
           },
           "imports": [
@@ -96,23 +98,25 @@
         }
       }
     },
-    "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BlogProject.API\\BlogProject.API.csproj": {
+    "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BlogProject.API\\BlogProject.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BlogProject.API\\BlogProject.API.csproj",
+        "projectUniqueName": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BlogProject.API\\BlogProject.API.csproj",
         "projectName": "BlogProject.API",
-        "projectPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BlogProject.API\\BlogProject.API.csproj",
-        "packagesPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BlogProject.API\\obj\\",
+        "projectPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BlogProject.API\\BlogProject.API.csproj",
+        "packagesPath": "C:\\Users\\farslan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BlogProject.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\farslan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -125,14 +129,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BusinessLayer\\BusinessLayer.csproj"
               },
-              "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Helper\\Helper.csproj": {
-                "projectPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Helper\\Helper.csproj"
+              "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Helper\\Helper.csproj": {
+                "projectPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Helper\\Helper.csproj"
               }
             }
           }
@@ -153,19 +157,15 @@
             },
             "CloudinaryDotNet": {
               "target": "Package",
-              "version": "[1.17.0, )"
+              "version": "[1.18.1, )"
             },
             "Marvin.Cache.Headers": {
               "target": "Package",
-              "version": "[6.0.0, )"
-            },
-            "Microsoft.AspNetCore": {
-              "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[6.1.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
@@ -173,29 +173,29 @@
             },
             "Microsoft.AspNetCore.JsonPatch": {
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.Extensions.Caching.Abstractions": {
               "target": "Package",
@@ -203,11 +203,7 @@
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
-              "version": "[6.16.0, )"
-            },
-            "Microsoft.NETCore.App": {
-              "target": "Package",
-              "version": "[2.2.8, )"
+              "version": "[6.20.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Contracts": {
               "target": "Package",
@@ -215,11 +211,11 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.6, )"
             },
             "NLog": {
               "target": "Package",
-              "version": "[4.7.14, )"
+              "version": "[5.0.1, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
@@ -248,23 +244,25 @@
         }
       }
     },
-    "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\farslan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\farslan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -277,11 +275,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Helper\\Helper.csproj": {
-                "projectPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Helper\\Helper.csproj"
+              "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Helper\\Helper.csproj": {
+                "projectPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Helper\\Helper.csproj"
               }
             }
           }
@@ -300,7 +298,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.6, )"
             }
           },
           "imports": [
@@ -322,23 +320,25 @@
         }
       }
     },
-    "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\farslan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\farslan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -351,11 +351,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Entities\\Entities.csproj"
+              "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Helper\\Helper.csproj": {
-                "projectPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Helper\\Helper.csproj"
+              "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Helper\\Helper.csproj": {
+                "projectPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Helper\\Helper.csproj"
               }
             }
           }
@@ -372,13 +372,13 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.6, )"
             }
           },
           "imports": [
@@ -400,23 +400,25 @@
         }
       }
     },
-    "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Entities\\Entities.csproj": {
+    "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\farslan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\farslan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -441,19 +443,19 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore": {
+            "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[5.0.17, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.6, )"
             }
           },
           "imports": [
@@ -475,23 +477,25 @@
         }
       }
     },
-    "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Helper\\Helper.csproj": {
+    "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Helper\\Helper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Helper\\Helper.csproj",
+        "projectUniqueName": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Helper\\Helper.csproj",
         "projectName": "Helper",
-        "projectPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Helper\\Helper.csproj",
-        "packagesPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Helper\\obj\\",
+        "projectPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Helper\\Helper.csproj",
+        "packagesPath": "C:\\Users\\farslan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Helper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\farslan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -504,8 +508,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\fatihfurkan.DESKTOP-LDVGTNI\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Entities\\Entities.csproj"
+              "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\farslan\\Desktop\\blog\\ArticlesOriginAPI\\Entities\\Entities.csproj"
               }
             }
           }
@@ -526,21 +530,25 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[6.0.6, )"
             },
             "NLog": {
               "target": "Package",
-              "version": "[4.7.14, )"
+              "version": "[5.0.1, )"
             },
             "NLog.Web.AspNetCore": {
               "target": "Package",
-              "version": "[4.14.0, )"
+              "version": "[5.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

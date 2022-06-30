@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    //ilerde lazım olursa diye U ekledtım
+
     public interface IRepository<T> 
         where T : class
     {
