@@ -122,18 +122,24 @@ namespace BlogProject.API
             services.AddScoped(typeof(LikeManager));
             services.AddScoped(typeof(CommentManager));
             services.AddScoped(typeof(FollowerManager));
-            services.AddScoped(typeof(MailHelper));
+            services.AddSingleton(typeof(MailHelper));
             services.AddScoped(typeof(BlogContext));
             services.AddTransient<MyInitiliazer>();
 
 
-            //addsignalr
+            //signalr
             services.AddSignalR();
 
 
 
             // appsettings den okumak için startup da configure etmek gerekiyor.
             services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
+
+
+         
+            services.Configure<MailSettings>(Configuration.GetSection("MailHelperSettings"));
+
+
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options => {
@@ -164,7 +170,7 @@ namespace BlogProject.API
             }
             //ConfigureExceptionHandler method is prepared in ErrorHandler folder to catch error and log them.
             app.ConfigureExceptionHandler(logger);
-            // seeder.Seed();
+            seeder.Seed();
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
         
             //app.UseHttpsRedirection();

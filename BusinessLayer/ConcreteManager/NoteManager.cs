@@ -7,6 +7,7 @@ using Entities;
 using System.Linq;
 using Helper;
 using DataAccessLayer.UnitOfWork;
+using Microsoft.AspNetCore.SignalR;
 
 namespace BusinessLayer
 {
@@ -15,9 +16,14 @@ namespace BusinessLayer
         //IRepository<Note> noteRepository;
         //IRepository<Tag> tagRepository;
         IUnitOfWork unitOfWork;
-        public NoteManager(IUnitOfWork _unitOfWork)
+
+        IHubContext<NotificationHub> notificationHub;
+
+
+        public NoteManager(IUnitOfWork _unitOfWork, IHubContext<NotificationHub> _notificationHub)
         {
             unitOfWork = _unitOfWork;
+            notificationHub = _notificationHub;
             //noteRepository = _noteRepository;
             //tagRepository = _tagRepository;
         }
@@ -68,7 +74,16 @@ namespace BusinessLayer
 
         public async Task<int> Insert(Note note)
         {
-            return await unitOfWork.Note.Insert(note);
+            int result = await unitOfWork.Note.Insert(note);
+
+            if((result is 1) && (note.IsDraft is true ))
+            {
+
+              // notificationHub.Clients.User.SendAsync("", "messega");
+
+            }
+
+            return result;
         }
 
         public async Task<int> Update(Note note)

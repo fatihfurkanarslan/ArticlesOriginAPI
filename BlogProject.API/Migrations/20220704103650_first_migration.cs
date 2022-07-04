@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BlogProject.API.Migrations
 {
-    public partial class FirstMigration : Migration
+    public partial class first_migration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -181,6 +181,30 @@ namespace BlogProject.API.Migrations
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Followers",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FollowerId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    FolloweeId = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Followers", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Followers_AspNetUsers_FolloweeId",
+                        column: x => x.FolloweeId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Followers_AspNetUsers_FollowerId",
+                        column: x => x.FollowerId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -367,6 +391,16 @@ namespace BlogProject.API.Migrations
                 column: "UserId1");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Followers_FolloweeId",
+                table: "Followers",
+                column: "FolloweeId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Followers_FollowerId",
+                table: "Followers",
+                column: "FollowerId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Likes_NoteId",
                 table: "Likes",
                 column: "NoteId");
@@ -416,6 +450,9 @@ namespace BlogProject.API.Migrations
 
             migrationBuilder.DropTable(
                 name: "Comments");
+
+            migrationBuilder.DropTable(
+                name: "Followers");
 
             migrationBuilder.DropTable(
                 name: "Likes");

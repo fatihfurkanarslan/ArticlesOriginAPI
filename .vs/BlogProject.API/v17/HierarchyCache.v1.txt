@@ -2,24 +2,18 @@
 i:{00000000-0000-0000-0000-000000000000}:BlogProject.API.sln
 ++BlogProject.API
 i:{00000000-0000-0000-0000-000000000000}:BlogProject.API
-i:{e8250deb-b14a-4511-90c8-d31667babc5f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\blogproject.api.csproj
+i:{e8250deb-b14a-4511-90c8-d31667babc5f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\bin\debug\net6.0\blogproject.api.dll
 ++Connected Services 
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3009
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3023
 ++Dependencies
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3008
-i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:>1383
-i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:>1385
-i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:>1382
-i:{b554a5bf-4e58-426c-8996-b2932e550494}:>1384
-i:{e8250deb-b14a-4511-90c8-d31667babc5f}:>2326
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3022
+i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:>1387
+i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:>1390
+i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:>1389
+i:{b554a5bf-4e58-426c-8996-b2932e550494}:>1388
+i:{e8250deb-b14a-4511-90c8-d31667babc5f}:>2339
 ++Properties
 i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\properties\
-++PublishProfiles
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\properties\publishprofiles\
-++FolderProfile.pubxml
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\properties\publishprofiles\folderprofile.pubxml
-++launchSettings.json
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\properties\launchsettings.json
 ++Controllers
 i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\controllers\
 ++AuthController.cs
@@ -44,8 +38,6 @@ i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articleso
 i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\controllers\valuescontroller.cs
 ++internal_logs
 i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\internal_logs\
-++internallog.txt
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\internal_logs\internallog.txt
 ++logs
 i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\logs\
 ++Migrations
@@ -63,7 +55,7 @@ i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articleso
 ++Startup.cs
 i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\startup.cs
 ++No service dependencies discovered
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3010
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3024
 ++Analyzers
 i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:analyzers
 i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:analyzers
@@ -91,14 +83,18 @@ i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:projects
 i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:projects
 i:{b554a5bf-4e58-426c-8996-b2932e550494}:projects
 i:{e8250deb-b14a-4511-90c8-d31667babc5f}:projects
+++PublishProfiles
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\properties\publishprofiles\
+++launchSettings.json
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\properties\launchsettings.json
+++internallog.txt
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\internal_logs\internallog.txt
 ++2022-03-08_logfile.txt
 i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\logs\2022-03-08_logfile.txt
 ++2022-03-14_logfile.txt
 i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\logs\2022-03-14_logfile.txt
 ++20220323193950_First-Migration.cs
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\migrations\20220323193950_first-migration.cs
 ++20220629210503_Follower_Table.cs
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\migrations\20220629210503_follower_table.cs
 ++BlogContextModelSnapshot.cs
 i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\migrations\blogcontextmodelsnapshot.cs
 ++appsettings.Development.json
@@ -179,69 +175,64 @@ i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articleso
 i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\microsoft.netcore.app
 i:{e8250deb-b14a-4511-90c8-d31667babc5f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api.unittest\microsoft.netcore.app
 ++AutoMapper.Extensions.Microsoft.DependencyInjection (11.0.0)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3085
-i:{b554a5bf-4e58-426c-8996-b2932e550494}:>3055
-++CloudinaryDotNet (1.17.0)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3098
-++Marvin.Cache.Headers (6.0.0)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3088
-++Microsoft.AspNetCore (2.2.0)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3096
-i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:>3036
-++Microsoft.AspNetCore.Authentication.JwtBearer (6.0.3)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3090
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3057
+i:{b554a5bf-4e58-426c-8996-b2932e550494}:>3138
+++CloudinaryDotNet (1.18.1)
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3187
+++Marvin.Cache.Headers (6.1.0)
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3181
+++Microsoft.AspNetCore.Authentication.JwtBearer (6.0.6)
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3182
 ++Microsoft.AspNetCore.Http (2.2.2)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3089
-++Microsoft.AspNetCore.JsonPatch (6.0.3)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3083
-++Microsoft.AspNetCore.Mvc.NewtonsoftJson (6.0.3)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3087
-++Microsoft.EntityFrameworkCore (6.0.3)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3082
-i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:>3029
-i:{b554a5bf-4e58-426c-8996-b2932e550494}:>3053
-++Microsoft.EntityFrameworkCore.Sqlite (6.0.3)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3086
-++Microsoft.EntityFrameworkCore.SqlServer (6.0.3)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3084
-++Microsoft.EntityFrameworkCore.Tools (6.0.3)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3093
-i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:>3030
-i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:>3033
-i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:>3035
-i:{b554a5bf-4e58-426c-8996-b2932e550494}:>3058
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3064
+++Microsoft.AspNetCore.JsonPatch (6.0.6)
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3177
+++Microsoft.AspNetCore.Mvc.NewtonsoftJson (6.0.6)
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3180
+++Microsoft.EntityFrameworkCore (6.0.6)
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3176
+i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:>3173
+i:{b554a5bf-4e58-426c-8996-b2932e550494}:>3169
+++Microsoft.EntityFrameworkCore.Sqlite (6.0.6)
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3179
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.6)
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3178
+++Microsoft.EntityFrameworkCore.Tools (6.0.6)
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3184
+i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:>3174
+i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:>3175
+i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:>3168
+i:{b554a5bf-4e58-426c-8996-b2932e550494}:>3171
 ++Microsoft.Extensions.Caching.Abstractions (6.0.0)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3080
-++Microsoft.IdentityModel.Tokens (6.16.0)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3092
-++Microsoft.NETCore.App (2.2.8)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3094
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3051
+++Microsoft.IdentityModel.Tokens (6.20.0)
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3183
 ++Microsoft.VisualStudio.Web.CodeGeneration.Contracts (5.0.2)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3091
-++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.2)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3097
-++NLog (4.7.14)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3095
-i:{b554a5bf-4e58-426c-8996-b2932e550494}:>3059
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3069
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.6)
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3186
+++NLog (5.0.1)
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3185
+i:{b554a5bf-4e58-426c-8996-b2932e550494}:>3172
 ++System.Drawing.Common (6.0.0)
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3081
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:>3053
 ++BusinessLayer
 i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\businesslayer.csproj
 i:{00000000-0000-0000-0000-000000000000}:BusinessLayer
 ++DataAccessLayer
 i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\dataaccesslayer\dataaccesslayer.csproj
 i:{00000000-0000-0000-0000-000000000000}:DataAccessLayer
-i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\dataaccesslayer\dataaccesslayer.csproj
-i:{e8250deb-b14a-4511-90c8-d31667babc5f}:c:\users\farslan\desktop\blog\articlesoriginapi\dataaccesslayer\dataaccesslayer.csproj
+i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\dataaccesslayer\bin\debug\net6.0\dataaccesslayer.dll
+i:{e8250deb-b14a-4511-90c8-d31667babc5f}:c:\users\farslan\desktop\blog\articlesoriginapi\dataaccesslayer\bin\debug\net6.0\dataaccesslayer.dll
 ++Helper
 i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\helper.csproj
-i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\helper.csproj
-i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\helper.csproj
+i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\bin\debug\net6.0\helper.dll
+i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\bin\debug\net6.0\helper.dll
 i:{00000000-0000-0000-0000-000000000000}:Helper
+++FolderProfile.pubxml
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\properties\publishprofiles\folderprofile.pubxml
 ++20220323193950_First-Migration.Designer.cs
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\migrations\20220323193950_first-migration.designer.cs
 ++20220629210503_Follower_Table.Designer.cs
-i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\migrations\20220629210503_follower_table.designer.cs
 ++AbstractRepositories
 i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:c:\users\farslan\desktop\blog\articlesoriginapi\dataaccesslayer\abstractrepositories\
 ++ICategoryRepository.cs
@@ -295,13 +286,29 @@ i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:c:\users\farslan\desktop\blog\articleso
 ++Assemblies
 i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:assemblies
 ++Microsoft.EntityFrameworkCore
-i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:c:\users\farslan\desktop\blog\articlesoriginapi\dataaccesslayer\microsoft.entityframeworkcore
+i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:c:\users\farslan\.nuget\packages\microsoft.entityframeworkcore\6.0.3\lib\net6.0\microsoft.entityframeworkcore.dll
 ++Entities
-i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\entities.csproj
+i:{803056d4-3b79-4cc2-9a0b-11296eb368ff}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\bin\debug\net6.0\entities.dll
 i:{00000000-0000-0000-0000-000000000000}:Entities
-i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\entities.csproj
+i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\bin\debug\net6.0\entities.dll
 ++AbstractManager
 i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\
+++ICategoryManager.cs
+i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\icategorymanager.cs
+++ICommentManager.cs
+i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\icommentmanager.cs
+++IFollowerManager.cs
+i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\ifollowermanager.cs
+++ILikeManager.cs
+i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\ilikemanager.cs
+++INoteManager.cs
+i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\inotemanager.cs
+++IPhotoManager.cs
+i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\iphotomanager.cs
+++ITagManager.cs
+i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\itagmanager.cs
+++IUserManager.cs
+i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\iusermanager.cs
 ++ConcreteManager
 i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\concretemanager\
 ++CategoryManager.cs
@@ -320,44 +327,10 @@ i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articleso
 i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\concretemanager\tagmanager.cs
 ++UserManager.cs
 i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\concretemanager\usermanager.cs
-++ICategoryManager.cs
-i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\icategorymanager.cs
-++ICommentManager.cs
-i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\icommentmanager.cs
-++IFollowerManager.cs
-i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\ifollowermanager.cs
-++ILikeManager.cs
-i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\ilikemanager.cs
-++INoteManager.cs
-i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\inotemanager.cs
-++IPhotoManager.cs
-i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\iphotomanager.cs
-++ITagManager.cs
-i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\itagmanager.cs
-++IUserManager.cs
-i:{b65b110b-7de2-45cb-8793-b91c44c90a5d}:c:\users\farslan\desktop\blog\articlesoriginapi\businesslayer\abstractmanager\iusermanager.cs
 ++Configuration
 i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\configuration\
 ++Dtos
 i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\dtos\
-++ErrorModel
-i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\errormodel\
-++Category.cs
-i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\category.cs
-++Comment.cs
-i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\comment.cs
-++Follower.cs
-i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\follower.cs
-++Like.cs
-i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\like.cs
-++Note.cs
-i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\note.cs
-++Photo.cs
-i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\photo.cs
-++Tag.cs
-i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\tag.cs
-++User.cs
-i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\user.cs
 ++CategoryInsertModel.cs
 i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\dtos\categoryinsertmodel.cs
 ++CategoryUpdateModel.cs
@@ -382,16 +355,46 @@ i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articleso
 i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\dtos\userforloginmodel.cs
 ++UserRegisterModel.cs
 i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\dtos\userregistermodel.cs
+++ErrorModel
+i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\errormodel\
+++Category.cs
+i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\category.cs
+++Comment.cs
+i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\comment.cs
+++Follower.cs
+i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\follower.cs
+++Like.cs
+i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\like.cs
+++Note.cs
+i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\note.cs
+++NotificationMessage.cs
+i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\notificationmessage.cs
+++Photo.cs
+i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\photo.cs
+++Tag.cs
+i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\tag.cs
+++User.cs
+i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\user.cs
 ++ErrorDetails.cs
 i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:c:\users\farslan\desktop\blog\articlesoriginapi\entities\errormodel\errordetails.cs
-++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.3)
-i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:>3034
+++Microsoft.AspNetCore.Http.Features (5.0.17)
+i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:>3159
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.6)
+i:{8f25086b-06bb-43d9-b24c-087bba72a95d}:>3167
 ++ErrorHandler
 i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\errorhandler\
 ++Filters
 i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\filters\
+++ValidationFilterAttribute.cs
+i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\filters\validationfilterattribute.cs
 ++Logging
 i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\logging\
+++NotifyUser
+i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\notifyuser\
+++NotificationAttribute.cs
+i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\notifyuser\notificationattribute.cs
+++NotificationHub.cs
+i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\notifyuser\notificationhub.cs
 ++Extensions.cs
 i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\extensions.cs
 ++IMailHelper.cs
@@ -402,35 +405,37 @@ i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articleso
 i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\mailsettings.cs
 ++NoteParams.cs
 i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\noteparams.cs
-++NotificationHub.cs
-i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\notificationhub.cs
 ++PagedList.cs
 i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\pagedlist.cs
 ++PaginationHeader.cs
 i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\paginationheader.cs
 ++ExceptionHandlerMiddleware.cs
 i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\errorhandler\exceptionhandlermiddleware.cs
-++ValidationFilterAttribute.cs
-i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\filters\validationfilterattribute.cs
 ++ILoggerManager.cs
 i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\logging\iloggermanager.cs
 ++LogManager.cs
 i:{b554a5bf-4e58-426c-8996-b2932e550494}:c:\users\farslan\desktop\blog\articlesoriginapi\helper\logging\logmanager.cs
-++NLog.Web.AspNetCore (4.14.0)
-i:{b554a5bf-4e58-426c-8996-b2932e550494}:>3057
+++Newtonsoft.Json (13.0.1)
+i:{b554a5bf-4e58-426c-8996-b2932e550494}:>3160
+++NLog.Web.AspNetCore (5.0.0)
+i:{b554a5bf-4e58-426c-8996-b2932e550494}:>3170
 ++BlogProject.API.UnitTest
 i:{00000000-0000-0000-0000-000000000000}:BlogProject.API.UnitTest
 ++CommentUnitTest.cs
 i:{e8250deb-b14a-4511-90c8-d31667babc5f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api.unittest\commentunittest.cs
 ++xunit.analyzers
 i:{e8250deb-b14a-4511-90c8-d31667babc5f}:c:\users\farslan\.nuget\packages\xunit.analyzers\0.10.0\analyzers\dotnet\cs\xunit.analyzers.dll
-++coverlet.collector (3.1.0)
-i:{e8250deb-b14a-4511-90c8-d31667babc5f}:>3072
-++Microsoft.NET.Test.Sdk (16.11.0)
-i:{e8250deb-b14a-4511-90c8-d31667babc5f}:>3068
+++coverlet.collector (3.1.2)
+i:{e8250deb-b14a-4511-90c8-d31667babc5f}:>3190
+++Microsoft.NET.Test.Sdk (17.2.0)
+i:{e8250deb-b14a-4511-90c8-d31667babc5f}:>3188
 ++Moq (4.18.1)
-i:{e8250deb-b14a-4511-90c8-d31667babc5f}:>3071
+i:{e8250deb-b14a-4511-90c8-d31667babc5f}:>3121
 ++xunit (2.4.1)
-i:{e8250deb-b14a-4511-90c8-d31667babc5f}:>3069
-++xunit.runner.visualstudio (2.4.3)
-i:{e8250deb-b14a-4511-90c8-d31667babc5f}:>3070
+i:{e8250deb-b14a-4511-90c8-d31667babc5f}:>3119
+++xunit.runner.visualstudio (2.4.5)
+i:{e8250deb-b14a-4511-90c8-d31667babc5f}:>3189
+++20220704103650_first_migration.cs
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\migrations\20220704103650_first_migration.cs
+++20220704103650_first_migration.Designer.cs
+i:{4f680c55-68ae-41b8-824a-ce3121f2609f}:c:\users\farslan\desktop\blog\articlesoriginapi\blogproject.api\migrations\20220704103650_first_migration.designer.cs

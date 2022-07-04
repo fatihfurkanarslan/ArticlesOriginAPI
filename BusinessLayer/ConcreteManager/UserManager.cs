@@ -43,14 +43,15 @@ namespace BusinessLayer
         {
                 User user = await unitOfWork.User.GetAsync(x => x.UserName == userModel.username.ToLower());
 
-                if (user != null)
-                {
-                    if (VerifyPassword(userModel.password, user.PasswordHash, user.PasswordSalt))
-                    {
-                        return user;
-                    }
+                if (user != null && VerifyPassword(userModel.password, user.PasswordHash, user.PasswordSalt))
+                {    
+                        return user;       
                 }
-                return null;   
+                else
+                {
+                    return null;
+                }
+              
         }
 
         public async Task<User> Register(UserRegisterModel registerModel)
@@ -129,7 +130,7 @@ namespace BusinessLayer
             using (var hmac = new System.Security.Cryptography.HMACSHA512(passwordSalt))
             {
                 var computedHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
-                byte[] passHash = Encoding.ASCII.GetBytes(passwordHash);
+                byte[] passHash = Convert.FromBase64String(passwordHash);
                 for (int i = 0; i < computedHash.Length; i++)
                 {
                     if (computedHash[i] != passHash[i])

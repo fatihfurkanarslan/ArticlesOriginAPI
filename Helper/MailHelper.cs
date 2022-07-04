@@ -41,6 +41,7 @@ namespace Helper
                     mailConfig.Value.MailHost,
                     mailConfig.Value.MailPort))
                 {
+                    smtp.UseDefaultCredentials = false;
                     smtp.EnableSsl = true;
                     smtp.Credentials =
                         new NetworkCredential(

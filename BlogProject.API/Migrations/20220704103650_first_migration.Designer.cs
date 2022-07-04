@@ -12,14 +12,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlogProject.API.Migrations
 {
     [DbContext(typeof(BlogContext))]
-    [Migration("20220323193950_First-Migration")]
-    partial class FirstMigration
+    [Migration("20220704103650_first_migration")]
+    partial class first_migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.3")
+                .HasAnnotation("ProductVersion", "6.0.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -97,6 +97,29 @@ namespace BlogProject.API.Migrations
                     b.HasIndex("UserId1");
 
                     b.ToTable("Comments");
+                });
+
+            modelBuilder.Entity("Entities.Follower", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("FolloweeId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("FollowerId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FolloweeId");
+
+                    b.HasIndex("FollowerId");
+
+                    b.ToTable("Followers");
                 });
 
             modelBuilder.Entity("Entities.Like", b =>
@@ -490,6 +513,21 @@ namespace BlogProject.API.Migrations
                     b.Navigation("Note");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Entities.Follower", b =>
+                {
+                    b.HasOne("Entities.User", "UserFolloweeId")
+                        .WithMany()
+                        .HasForeignKey("FolloweeId");
+
+                    b.HasOne("Entities.User", "UserFollowerId")
+                        .WithMany()
+                        .HasForeignKey("FollowerId");
+
+                    b.Navigation("UserFolloweeId");
+
+                    b.Navigation("UserFollowerId");
                 });
 
             modelBuilder.Entity("Entities.Like", b =>
