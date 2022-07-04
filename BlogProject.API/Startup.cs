@@ -61,7 +61,7 @@ namespace BlogProject.API
                 );
 
 
-            string connection = @"Server=BIM-FURKANA1\SQLEXPRESS;Database=BlogProject;Trusted_Connection=True;MultipleActiveResultSets=true";
+            string connection = @"Server=DESKTOP-LDVGTNI\SQLEXPRESS;Database=BlogProject;Trusted_Connection=True;MultipleActiveResultSets=true";
             //db connection
             services.AddDbContext<BlogContext>(options => options.UseSqlServer(connection,
                 b => b.MigrationsAssembly("BlogProject.API")
