@@ -198,7 +198,7 @@ namespace BlogProject.API.Controllers
 
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPut("update")]
-        public async Task<IActionResult> UpdateNote(NoteUpdateModel noteModel)
+        public async Task<IActionResult> UpdateNote([FromBody]NoteUpdateModel noteModel)
         {
             Note note = await noteManager.GetNote(noteModel.Id);
 

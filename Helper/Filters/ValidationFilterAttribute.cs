@@ -28,7 +28,7 @@ namespace Helper.Filters
             var controller = context.RouteData.Values["controller"];
 
             var param = context.ActionArguments.SingleOrDefault(x => x.Value.ToString().Contains("Dto")).Value;
-            if (param != null)
+            if (param == null)
             {
                 logger.LogError($"Object sent from client is null. Controller: {controller}, Action: {action}");
                 context.Result = new BadRequestObjectResult($"Object is null.  Controller: {controller}, Action: {action}");

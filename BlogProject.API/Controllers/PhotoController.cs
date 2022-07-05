@@ -84,7 +84,7 @@ namespace BlogProject.API.Controllers
                 }
             }
 
-            photoForCreationModel.PhotoUrl = uploadResult.Uri.ToString();
+            photoForCreationModel.PhotoUrl = uploadResult.Url.ToString();
             photoForCreationModel.PublicId = uploadResult.PublicId;
             
 
@@ -122,7 +122,7 @@ namespace BlogProject.API.Controllers
                 }
             }
 
-            photoForCreationModel.PhotoUrl = uploadResult.Uri.ToString();
+            photoForCreationModel.PhotoUrl = uploadResult.Url.ToString();
             photoForCreationModel.PublicId = uploadResult.PublicId;
 
 

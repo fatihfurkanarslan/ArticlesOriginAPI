@@ -129,7 +129,7 @@ namespace BlogProject.API.Controllers
                     uploadResult = _cloudinary.Upload(uploadParams);
                 }
 
-                categoryModel.PhotoUrl = uploadResult.Uri.ToString();
+                categoryModel.PhotoUrl = uploadResult.Url.ToString();
             }
 
 

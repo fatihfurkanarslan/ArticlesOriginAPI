@@ -32,7 +32,7 @@ namespace Helper.ErrorHandler
                     await context.Response.WriteAsync(new ErrorDetails()
                     {
                         StatusCode = (int)HttpStatusCode.InternalServerError,
-                        Message = "Internal Server Error."
+                        Message = "Internal Server Error Occured!!."
                     }.ToString());
                 }
             }

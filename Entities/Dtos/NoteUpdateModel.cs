@@ -1,8 +1,12 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Entities.Dtos
 {
     public class NoteUpdateModel
     {
         public int Id { get; set; }
+
+        [Required]
         public string Title { get; set; }
         public string Text { get; set; }
 

@@ -15,6 +15,7 @@ using Entities;
 using Helper;
 using Helper.ErrorHandler;
 using Helper.Filters;
+using Helper.JWTToken;
 using Helper.Logging;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -60,8 +61,14 @@ namespace BlogProject.API
                 }
                 );
 
+            //[ApiController] attribute which is used in the default templates and will add model validation to all actions of the given controller.
+            //It can be disabled globally via ApiBehaviorOptions during Startup:
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
 
-            string connection = @"Server=DESKTOP-LDVGTNI\SQLEXPRESS;Database=BlogProject;Trusted_Connection=True;MultipleActiveResultSets=true";
+            string connection = @"Server=BIM-FURKANA1\SQLEXPRESS;Database=BlogProject;Trusted_Connection=True;MultipleActiveResultSets=true";
             //db connection
             services.AddDbContext<BlogContext>(options => options.UseSqlServer(connection,
                 b => b.MigrationsAssembly("BlogProject.API")
@@ -123,6 +130,7 @@ namespace BlogProject.API
             services.AddScoped(typeof(CommentManager));
             services.AddScoped(typeof(FollowerManager));
             services.AddSingleton(typeof(MailHelper));
+            services.AddSingleton(typeof(JWTCreater));
             services.AddScoped(typeof(BlogContext));
             services.AddTransient<MyInitiliazer>();
 
