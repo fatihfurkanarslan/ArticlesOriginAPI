@@ -60,13 +60,13 @@ namespace BlogProject.API.Controllers
             return Ok(tags);
         }
 
-        [HttpPost("getnotesbytag")]
-        public IActionResult GetNotesByTag(TagModel tag)
-        {    
-            List<Tag> tags = tagManager.GetNotesByTag(tag.tag);
+        //[HttpPost("getnotesbytag")]
+        //public IActionResult GetNotesByTag(TagModel tag)
+        //{    
+        //    List<Tag> tags = tagManager.GetNotesByTag(tag.tag);
             
-            return Ok(tags);
-        }
+        //    return Ok(tags);
+        //}
 
     }
 }

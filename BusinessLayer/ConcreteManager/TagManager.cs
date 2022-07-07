@@ -25,12 +25,6 @@ namespace BusinessLayer
             return returnValues;
         }
 
-        public List<Tag> GetNotesByTag(string str)
-        {
-            var returnValues = unitOfWork.Tag.FindList(x => x.Tags == str, "Note").Result;
-            return returnValues;
-        }
-
 
         public async Task<int> Insert(Tag tag)
         {

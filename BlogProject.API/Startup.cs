@@ -70,9 +70,9 @@ namespace BlogProject.API
 
             string connection = @"Server=BIM-FURKANA1\SQLEXPRESS;Database=BlogProject;Trusted_Connection=True;MultipleActiveResultSets=true";
             //db connection
-            services.AddDbContext<BlogContext>(options => options.UseSqlServer(connection,
-                b => b.MigrationsAssembly("BlogProject.API")
-                ));
+            services.AddDbContext<BlogContext>(
+                options => options.UseSqlServer(connection, b => b.MigrationsAssembly("BlogProject.API"))
+                );
 
             //user settings
             services.AddIdentity<User, IdentityRole>(
@@ -129,6 +129,8 @@ namespace BlogProject.API
             services.AddScoped(typeof(LikeManager));
             services.AddScoped(typeof(CommentManager));
             services.AddScoped(typeof(FollowerManager));
+            services.AddScoped(typeof(SearchManager));
+
             services.AddSingleton(typeof(MailHelper));
             services.AddSingleton(typeof(JWTCreater));
             services.AddScoped(typeof(BlogContext));
