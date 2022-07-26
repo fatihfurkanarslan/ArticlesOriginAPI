@@ -14,6 +14,8 @@ namespace Entities
         public string Title { get; set; }
         public string Description { get; set; }
         public string Text { get; set; }
+
+        public string RAWText { get; set; }
         public int LikeCount { get; set; }
         public DateTime OnCreated { get; set; }
         public DateTime OnModified { get; set; }
@@ -27,7 +29,7 @@ namespace Entities
         public IList<Tag> Tags { get; set; }
 
         public User User { get; set; }
-        public int? UserId { get; set; }
+        public string? UserId { get; set; }
 
         public Category Category { get; set; }
         public int? CategoryId { get; set; }

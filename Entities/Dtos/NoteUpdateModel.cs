@@ -6,7 +6,6 @@ namespace Entities.Dtos
     {
         public int Id { get; set; }
 
-        [Required]
         public string Title { get; set; }
         public string Text { get; set; }
 

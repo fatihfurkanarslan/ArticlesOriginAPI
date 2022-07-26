@@ -1,0 +1,152 @@
+2022-07-21 00:30:12.8424 INFO it works!!
+2022-07-21 00:30:28.9738 INFO it works!!
+2022-07-21 00:30:29.1092 INFO it works!!
+2022-07-21 00:30:35.7674 INFO it works!!
+2022-07-21 00:30:35.9499 INFO it works!!
+2022-07-21 00:32:02.3404 INFO it works!!
+2022-07-21 00:32:08.9311 INFO it works!!
+2022-07-21 00:32:09.0945 INFO it works!!
+2022-07-21 00:32:54.8698 INFO it works!!
+2022-07-21 00:33:24.4977 INFO it works!!
+2022-07-21 00:34:05.2369 INFO it works!!
+2022-07-21 00:34:12.5435 INFO it works!!
+2022-07-21 00:34:13.0174 INFO it works!!
+2022-07-21 00:43:18.2126 INFO it works!!
+2022-07-21 00:43:21.7397 INFO it works!!
+2022-07-21 00:43:21.9262 INFO it works!!
+2022-07-21 00:43:25.3909 INFO it works!!
+2022-07-21 00:43:25.5525 INFO it works!!
+2022-07-21 13:44:16.2250 INFO it works!!
+2022-07-21 13:44:18.3763 INFO it works!!
+2022-07-21 13:49:41.7762 INFO it works!!
+2022-07-21 13:49:41.9671 INFO it works!!
+2022-07-21 13:50:23.7323 INFO it works!!
+2022-07-21 13:50:23.9332 INFO it works!!
+2022-07-21 18:53:32.2782 INFO it works!!
+2022-07-21 18:53:34.1299 INFO it works!!
+2022-07-21 18:54:14.7168 INFO it works!!
+2022-07-21 18:54:14.9716 INFO it works!!
+2022-07-21 18:54:44.8233 INFO it works!!
+2022-07-21 18:54:45.2132 INFO it works!!
+2022-07-21 19:30:59.4190 INFO it works!!
+2022-07-21 19:33:35.0652 INFO it works!!
+2022-07-21 19:33:35.1476 INFO it works!!
+2022-07-21 19:33:35.5339 INFO it works!!
+2022-07-21 19:33:55.0564 INFO it works!!
+2022-07-21 19:33:55.0596 INFO it works!!
+2022-07-21 19:33:55.5276 INFO it works!!
+2022-07-21 19:34:15.3211 INFO it works!!
+2022-07-21 19:34:15.4563 INFO it works!!
+2022-07-21 19:34:15.8547 INFO it works!!
+2022-07-21 19:40:05.2953 INFO it works!!
+2022-07-21 19:40:05.3883 INFO it works!!
+2022-07-21 19:40:05.7649 INFO it works!!
+2022-07-21 20:28:50.3027 INFO it works!!
+2022-07-21 20:28:50.8169 INFO it works!!
+2022-07-21 20:36:29.1825 INFO it works!!
+2022-07-21 20:36:29.3329 INFO it works!!
+2022-07-21 20:36:38.4685 INFO it works!!
+2022-07-21 20:36:38.7095 INFO it works!!
+2022-07-21 20:44:30.7598 INFO it works!!
+2022-07-21 20:44:30.9783 INFO it works!!
+2022-07-21 20:44:51.5620 INFO it works!!
+2022-07-21 20:44:51.8175 INFO it works!!
+2022-07-21 20:44:57.3546 INFO it works!!
+2022-07-21 20:44:57.6336 INFO it works!!
+2022-07-21 20:45:04.2407 INFO it works!!
+2022-07-21 20:45:04.4049 INFO it works!!
+2022-07-21 21:09:55.9105 INFO it works!!
+2022-07-21 21:09:56.0628 INFO it works!!
+2022-07-21 21:11:41.7047 INFO it works!!
+2022-07-21 21:11:41.8834 INFO it works!!
+2022-07-21 21:13:17.6200 INFO it works!!
+2022-07-21 21:13:17.7857 INFO it works!!
+2022-07-21 21:13:21.3312 INFO it works!!
+2022-07-21 21:13:21.4721 INFO it works!!
+2022-07-21 21:13:27.2657 INFO it works!!
+2022-07-21 21:13:27.5224 INFO it works!!
+2022-07-21 21:14:42.3089 INFO it works!!
+2022-07-21 21:14:42.4424 INFO it works!!
+2022-07-21 21:16:39.3716 INFO it works!!
+2022-07-21 21:16:39.5140 INFO it works!!
+2022-07-21 21:18:14.5820 INFO it works!!
+2022-07-21 21:18:14.7309 INFO it works!!
+2022-07-21 21:25:08.6176 INFO it works!!
+2022-07-21 21:25:08.8148 INFO it works!!
+2022-07-21 21:28:47.4036 INFO it works!!
+2022-07-21 21:29:30.4936 ERROR Something went wrong System.NullReferenceException: Object reference not set to an instance of an object.
+   at Helper.JWTToken.JWTCreater.CreateJWT(User userInfo) in C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Helper\JWT\JWTCreater.cs:line 28
+   at BlogProject.API.Controllers.AuthController.Login(UserForLoginModel userModel) in C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\BlogProject.API\Controllers\AuthController.cs:line 59
+   at lambda_method465(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task).
+2022-07-21 21:29:46.3375 ERROR Something went wrong System.NullReferenceException: Object reference not set to an instance of an object.
+   at Helper.JWTToken.JWTCreater.CreateJWT(User userInfo) in C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Helper\JWT\JWTCreater.cs:line 28
+   at BlogProject.API.Controllers.AuthController.Login(UserForLoginModel userModel) in C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\BlogProject.API\Controllers\AuthController.cs:line 59
+   at lambda_method465(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task).
+2022-07-21 21:29:47.0463 ERROR Something went wrong System.NullReferenceException: Object reference not set to an instance of an object.
+   at Helper.JWTToken.JWTCreater.CreateJWT(User userInfo) in C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Helper\JWT\JWTCreater.cs:line 28
+   at BlogProject.API.Controllers.AuthController.Login(UserForLoginModel userModel) in C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\BlogProject.API\Controllers\AuthController.cs:line 59
+   at lambda_method465(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.HandleResponse(HttpContext httpContext)
+   at Marvin.Cache.Headers.HttpCacheHeadersMiddleware.Invoke(HttpContext httpContext, IValidatorValueInvalidator validatorValueInvalidator)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task).
+2022-07-21 21:31:16.8410 INFO it works!!
+2022-07-21 21:31:17.0308 INFO it works!!
+2022-07-21 21:31:30.7237 INFO it works!!
+2022-07-21 21:31:32.1174 INFO it works!!
+2022-07-21 21:31:37.6759 INFO it works!!
+2022-07-21 21:31:42.7529 INFO it works!!
+2022-07-21 21:32:08.3451 INFO it works!!
+2022-07-21 21:32:08.5013 INFO it works!!
+2022-07-21 21:32:11.7597 INFO it works!!
+2022-07-21 21:32:11.9098 INFO it works!!

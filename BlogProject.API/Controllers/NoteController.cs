@@ -61,7 +61,7 @@ namespace BlogProject.API.Controllers
 
 
         [HttpGet("getnotesbyuser/{id}")]
-        public IActionResult GetNoteByUser(int id)
+        public IActionResult GetNoteByUser(string id)
         {
 
             var notes = noteManager.GetNotesByUser(id);
@@ -78,7 +78,7 @@ namespace BlogProject.API.Controllers
         //Once the cache expires, refuse to return stale responses to the user even if they say that stale responses are acceptable.
         [HttpCacheValidation(MustRevalidate = true)]
         [HttpGet("getnotes")]
-        public async Task<IActionResult> GetNotes([FromQuery]NoteParams noteParams)
+        public async Task<IActionResult> GetNotes([FromQuery] NoteParams noteParams)
         {
             //logging test
             logger.LogInfo("it works!!");
@@ -100,14 +100,14 @@ namespace BlogProject.API.Controllers
 
             return Ok(note);
         }
-        
+
         //this is just a header which controls duration. It is not a cache store.
         [ResponseCache(CacheProfileName = "120SecondsDuration")]
         [HttpCacheExpiration(CacheLocation = CacheLocation.Public, MaxAge = 60)]
         [HttpCacheValidation(MustRevalidate = true)]
         [HttpGet("getpopularnotes")]
         public IActionResult GetPopularNotes()
-        {   
+        {
             var popularNotes = noteManager.GetPopsularNotes();
 
             // var categoryToReturn = mapper.Map<UserDetailModel>(category);
@@ -116,7 +116,7 @@ namespace BlogProject.API.Controllers
         }
 
         [HttpPost("draft")]
-        public async Task<IActionResult> DraftNote(NoteInsertModel noteModel)
+        public async Task<IActionResult> DraftNote([FromBody]NoteInsertModel noteModel)
         {
             var insertValue = mapper.Map<Note>(noteModel);
 
@@ -202,9 +202,17 @@ namespace BlogProject.API.Controllers
         {
             Note note = await noteManager.GetNote(noteModel.Id);
 
+            if(note.MainPhotourl != null)
+            {
                 note.MainPhotourl = noteModel.MainPhotourl;
+            }
+            else
+            {
+                note.MainPhotourl = "https://media.istockphoto.com/photos/top-view-of-words-new-blog-post-written-on-spiralbound-notepad-on-picture-id1157749043?k=20&m=1157749043&s=612x612&w=0&h=NVF5OPduCotPMlVE-jQH5FdnJQicST8-55cBreuVyuc=";
+            }
 
-                note.Title = noteModel.Title;
+            
+            note.Title = noteModel.Title;
                 note.Text = noteModel.Text;
                 note.IsDraft = noteModel.isDraft;
                 note.Description = noteModel.Description;

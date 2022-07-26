@@ -31,7 +31,7 @@ namespace DataAccessLayer
                 ActivatedGuid = Guid.NewGuid(),
                 IsActive = true,
                 IsAdmin = true,
-                Photourl = "StandartUser.png",
+                Photourl = "https://cdn.icon-icons.com/icons2/2506/PNG/512/user_icon_150670.png",
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt,
                 OnCreated = DateTime.Now,
@@ -51,7 +51,7 @@ namespace DataAccessLayer
                 ActivatedGuid = Guid.NewGuid(),
                 IsActive = true,
                 IsAdmin = true,
-                Photourl = "StandartUser.png",
+                Photourl = "https://cdn.icon-icons.com/icons2/2506/PNG/512/user_icon_150670.png",
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt,
                 OnCreated = DateTime.Now,
@@ -70,8 +70,7 @@ namespace DataAccessLayer
                     Description = "description",               
                     OnModified = DateTime.Now.AddHours(1),
                     OnModifiedUsername = "fatiharslan",
-                    PhotoUrl = "urltest"
-
+                    PhotoUrl = "https://image.shutterstock.com/image-vector/copy-file-icon-trendy-modern-260nw-1675417978.jpg"
                 };
 
                 context.Categories.Add(cat);
@@ -86,6 +85,7 @@ namespace DataAccessLayer
                         OnCreated = DateTime.Now,
                         OnModified = DateTime.Now.AddHours(1),
                         OnModifiedUsername = "fatiharslan",
+                        MainPhotourl = "https://media.istockphoto.com/photos/top-view-of-words-new-blog-post-written-on-spiralbound-notepad-on-picture-id1157749043?k=20&m=1157749043&s=612x612&w=0&h=NVF5OPduCotPMlVE-jQH5FdnJQicST8-55cBreuVyuc=",
                         User = user,
                         Category = cat
                                           

@@ -59,7 +59,7 @@ namespace BusinessLayer
             return returnValues;
         }
 
-        public List<Note> GetNotesByUser(int id)
+        public List<Note> GetNotesByUser(string id)
         {
             var returnValues = unitOfWork.Note.FindList(x => x.UserId == id);
             return returnValues;

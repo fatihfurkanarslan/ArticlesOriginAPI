@@ -24,7 +24,7 @@ namespace Entities.Dtos
 
         public int CategoryId { get; set; }
 
-        public int UserId { get; set; }
+        public string UserId { get; set; }
 
         // public List<Photo> MyProperty { get; set; }
 
