@@ -12,14 +12,15 @@ namespace Entities
 
         public int Id { get; set; }
 
-        public string FollowerId { get; set; }
-
-        public string FolloweeId { get; set; }
-
         [ForeignKey("FollowerId")]
-        public User UserFollowerId { get; set; }
+        public virtual User UserFollowers { get; set; }
+        public string? FollowerId { get; set; }
 
         [ForeignKey("FolloweeId")]
-        public User UserFolloweeId { get; set; }
+        public virtual User UserFollowees { get; set; }
+        public string? FolloweeId { get; set; }
+
+   
+
     }
 }

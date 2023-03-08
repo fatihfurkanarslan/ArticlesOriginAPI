@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Entities
@@ -32,11 +33,20 @@ namespace Entities
         public string ModifiedUsername { get; set; }
         public string Photourl { get; set; }
 
+        public bool Deleted { get; set; }
+
+
         // Bir kullanıcının birçok beğenisi yorumu ve yazısı var.
         public IList<Note> Notes { get; set; }
         public IList<Comment> Comments { get; set; }
         public IList<Like> Likes { get; set; }
-        
+
+        [InverseProperty("UserFollowers")]
+        public virtual IList<Follower> Followers { get; set; }
+
+        [InverseProperty("UserFollowees")]
+        public virtual IList<Follower> Followees { get; set; }
+
 
     }
 }

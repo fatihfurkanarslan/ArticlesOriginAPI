@@ -74,9 +74,9 @@ namespace BlogProject.API.Controllers
         //if it is public location, whenever cache duration is over, all new responses are added to public caching location,
         //if it is not, responses store private location 
         //cache location private that means allow to cache response
-        [HttpCacheExpiration(CacheLocation = CacheLocation.Public, MaxAge = 60)]
+        //[HttpCacheExpiration(CacheLocation = CacheLocation.Public, MaxAge = 60)]
         //Once the cache expires, refuse to return stale responses to the user even if they say that stale responses are acceptable.
-        [HttpCacheValidation(MustRevalidate = true)]
+        //[HttpCacheValidation(MustRevalidate = true)]
         [HttpGet("getnotes")]
         public async Task<IActionResult> GetNotes([FromQuery] NoteParams noteParams)
         {
@@ -95,6 +95,18 @@ namespace BlogProject.API.Controllers
         public async Task<IActionResult> GetNote(int id)
         {
             var note = await noteManager.GetNote(id);
+
+            // var categoryToReturn = mapper.Map<UserDetailModel>(category);
+
+            return Ok(note);
+        }
+
+        [HttpGet("getrawnote/{id}")]
+        public async Task<IActionResult> GetRAWNote(int id)
+        {
+            var note = await noteManager.GetNote(id);
+
+            //return just raw format of blog's text
 
             // var categoryToReturn = mapper.Map<UserDetailModel>(category);
 
@@ -200,7 +212,7 @@ namespace BlogProject.API.Controllers
         [HttpPut("update")]
         public async Task<IActionResult> UpdateNote([FromBody]NoteUpdateModel noteModel)
         {
-            Note note = await noteManager.GetNote(noteModel.Id);
+          Note note = await noteManager.GetNote(noteModel.Id);
 
             if(note.MainPhotourl != null)
             {
@@ -216,6 +228,7 @@ namespace BlogProject.API.Controllers
                 note.Text = noteModel.Text;
                 note.IsDraft = noteModel.isDraft;
                 note.Description = noteModel.Description;
+            note.RAWText = noteModel.RAWText;
 
                 int result = await noteManager.Update(note);
 
@@ -234,13 +247,24 @@ namespace BlogProject.API.Controllers
             }
             else
             {
-
+                
+                note.Title = noteModel.Title;
+                note.Description = noteModel.Description;
                 note.MainPhotourl = noteModel.MainPhotourl;          
 
                 int result = await noteManager.Update(note);
 
                 return Ok(result);
             }
+        }
+
+
+        [HttpPost("getnotesbytag")]
+        public async Task<IActionResult> GetNotes(TagModel tag)
+        {
+            List<Note> notes = await noteManager.GetNotesbyTag(tag.tagParam);
+
+            return Ok(notes);
         }
 
     }

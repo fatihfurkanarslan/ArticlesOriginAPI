@@ -1,17 +1,3 @@
-C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\bin\Debug\net6.0\Entities.deps.json
-C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\bin\Debug\net6.0\Entities.runtimeconfig.json
-C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\bin\Debug\net6.0\Entities.dll
-C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\bin\Debug\net6.0\Entities.pdb
-C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
-C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
-C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
-C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
-C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.dll
-C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\refint\Entities.dll
-C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.pdb
-C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.genruntimeconfig.cache
-C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\ref\Entities.dll
 C:\Users\farslan\Desktop\blog\ArticlesOriginAPI\Entities\bin\Debug\net6.0\Entities.deps.json
 C:\Users\farslan\Desktop\blog\ArticlesOriginAPI\Entities\bin\Debug\net6.0\Entities.runtimeconfig.json
 C:\Users\farslan\Desktop\blog\ArticlesOriginAPI\Entities\bin\Debug\net6.0\Entities.dll
@@ -26,3 +12,31 @@ C:\Users\farslan\Desktop\blog\ArticlesOriginAPI\Entities\obj\Debug\net6.0\refint
 C:\Users\farslan\Desktop\blog\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.pdb
 C:\Users\farslan\Desktop\blog\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.genruntimeconfig.cache
 C:\Users\farslan\Desktop\blog\ArticlesOriginAPI\Entities\obj\Debug\net6.0\ref\Entities.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\bin\Debug\net6.0\Entities.runtimeconfig.json
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\refint\Entities.dll
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.genruntimeconfig.cache
+C:\Users\fatihfurkan.DESKTOP-LDVGTNI\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\ref\Entities.dll
+C:\Users\Fatih Furkan Arslan\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\Fatih Furkan Arslan\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\bin\Debug\net6.0\Entities.runtimeconfig.json
+C:\Users\Fatih Furkan Arslan\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\Fatih Furkan Arslan\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\Fatih Furkan Arslan\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+C:\Users\Fatih Furkan Arslan\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih Furkan Arslan\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Fatih Furkan Arslan\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\Fatih Furkan Arslan\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Fatih Furkan Arslan\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.dll
+C:\Users\Fatih Furkan Arslan\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\refint\Entities.dll
+C:\Users\Fatih Furkan Arslan\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\Fatih Furkan Arslan\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\Entities.genruntimeconfig.cache
+C:\Users\Fatih Furkan Arslan\Desktop\Github\LatestVersion-BlogProject\ArticlesOriginAPI\Entities\obj\Debug\net6.0\ref\Entities.dll

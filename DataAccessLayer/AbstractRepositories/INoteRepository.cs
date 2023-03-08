@@ -19,5 +19,7 @@ namespace DataAccessLayer.AbstractRepositories
         Task<PagedList<Note>> IncludeAsyncForNoteByDescending(NoteParams noteParams, Expression<Func<Note, object>> includeFilter, Expression<Func<Note, object>> descendingFilter);
 
         Task<List<Note>> FindPopularNotes(Expression<Func<Note, bool>> filter, params string[] includetables);
+
+        Task<List<Note>> IncludeSingleAsync(string tagParam);
     }
 }

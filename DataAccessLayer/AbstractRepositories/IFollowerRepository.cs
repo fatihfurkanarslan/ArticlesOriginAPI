@@ -9,5 +9,7 @@ namespace DataAccessLayer.AbstractRepositories
 {
     public interface IFollowerRepository : IRepository<Follower>
     {
+      
+
     }
 }

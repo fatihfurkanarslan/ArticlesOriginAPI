@@ -1,6 +1,7 @@
 ﻿using DataAccessLayer;
 using DataAccessLayer.UnitOfWork;
 using Entities;
+using Entities.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,17 +19,32 @@ namespace BusinessLayer
             unitOfWork = _unitOfWork;
         }
 
-        public List<Tag> GetTags(int id)
-        {
-            // var returnValues = await tagRepository.IncludeAsync(x => x.NoteId == id);
-            var returnValues = unitOfWork.Tag.FindList(x => x.NoteId == id);
-            return returnValues;
-        }
+ 
 
 
-        public async Task<int> Insert(Tag tag)
+        public async Task<int> Insert(TagInsertModel tagInsertModel)
         {
-            return await unitOfWork.Tag.Insert(tag);
+            List<Note> notes = new List<Note>();
+            List<Tag> tagsToAdd = new List<Tag>();   
+
+
+            if (tagInsertModel.NoteId != 0)
+            {
+                Note note = await unitOfWork.Note.GetIncludeAsync(x => x.Id == tagInsertModel.NoteId);
+                notes.Add(note);
+            }
+
+            for (int i = 0; i < tagInsertModel.tags.Count; i++)
+            {
+                Tag tag = new Tag() {
+                    Notes = notes,
+                    OnCreated = DateTime.Now,
+                    OnModifiedUsername = "user",
+                    Tags = tagInsertModel.tags[i]
+                };
+               tagsToAdd.Add(tag);
+            }
+            return await unitOfWork.Tag.InsertRange(tagsToAdd);
         }
 
 

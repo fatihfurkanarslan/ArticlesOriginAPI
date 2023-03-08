@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entiti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helper", "Helper\Helper.csproj", "{B554A5BF-4E58-426C-8996-B2932E550494}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogProject.API.UnitTest", "BlogProject.API.UnitTest\BlogProject.API.UnitTest.csproj", "{E8250DEB-B14A-4511-90C8-D31667BABC5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogProject.API.UnitTest", "BlogProject.API.UnitTest\BlogProject.API.UnitTest.csproj", "{E8250DEB-B14A-4511-90C8-D31667BABC5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +21,8 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4F680C55-68AE-41B8-824A-CE3121F2609F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F680C55-68AE-41B8-824A-CE3121F2609F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F680C55-68AE-41B8-824A-CE3121F2609F}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{4F680C55-68AE-41B8-824A-CE3121F2609F}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{4F680C55-68AE-41B8-824A-CE3121F2609F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F680C55-68AE-41B8-824A-CE3121F2609F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{803056D4-3B79-4CC2-9A0B-11296EB368FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

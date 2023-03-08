@@ -29,6 +29,9 @@ namespace Helper.JWTToken
             {
                 new Claim(ClaimTypes.NameIdentifier, userInfo.Id.ToString()),
                 new Claim(ClaimTypes.Name, userInfo.UserName)
+
+                // new Claim("UserId", userInfo.Id.ToString()),
+                //new Claim("Username", userInfo.UserName)
             };
 
 

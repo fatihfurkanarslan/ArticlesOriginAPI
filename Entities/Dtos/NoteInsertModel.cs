@@ -10,6 +10,8 @@ namespace Entities.Dtos
         public string Description { get; set; }
         public string Text { get; set; }
 
+        public string RAWText { get; set; }
+
         public IFormFile File { get; set; }
 
         public List<string> Tags { get; set; }

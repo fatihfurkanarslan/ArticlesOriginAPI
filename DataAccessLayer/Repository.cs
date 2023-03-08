@@ -13,7 +13,7 @@ namespace DataAccessLayer
         where T : class
  
     {
-        private BlogContext blogContext;
+        public BlogContext blogContext;
         public DbSet<T> dbSetObject;
 
         public Repository(BlogContext context)
@@ -29,7 +29,14 @@ namespace DataAccessLayer
 
         public async Task<int> Insert(T entity)
         {
-            dbSetObject.Add(entity);
+           dbSetObject.Add(entity);
+            return await blogContext.SaveChangesAsync();
+        }
+
+
+        public async Task<int> InsertRange(List<T> entities)
+        {
+            dbSetObject.AddRange(entities);
             return await blogContext.SaveChangesAsync();
         }
 
@@ -40,6 +47,11 @@ namespace DataAccessLayer
         }
 
         public async Task<int> Update(T entity)
+        {
+            return await blogContext.SaveChangesAsync();
+        }
+
+        public async Task<int> UpdateDeleteColumn(T entity)
         {
             return await blogContext.SaveChangesAsync();
         }
@@ -73,12 +85,29 @@ namespace DataAccessLayer
             //return returnValues;
              return await dbSetObject.Include(includeFilter).ToListAsync();
         }
+
+        //public async Task<List<T>> IncludeSingleAsync(Expression<Func<T, bool>> filter, params string[] includetables)
+        //{
+        //    IQueryable<T> query = filter == null ? dbSetObject : dbSetObject;
+
+        //    includetables.ToList().ForEach(tableName =>
+        //    {
+        //        query = query.Include(tableName);
+        //    });
+
+        //    return await query.Where(filter).ToListAsync();
+
+        //}
         //for join tables
         public List<T> FindList(Expression<Func<T, bool>> filter)
         {
             return dbSetObject.Where(filter).ToList();
         }
 
+        public async Task<List<T>> FindListAsync(Expression<Func<T, bool>> filter)
+        {
+            return await dbSetObject.Where(filter).ToListAsync();
+        }
 
         public async Task<List<T>> FindList(Expression<Func<T, bool>> filter, params string[] includetables)
         {
@@ -91,6 +120,9 @@ namespace DataAccessLayer
 
             return await query.ToListAsync();
         }
+
+
+
 
     
 

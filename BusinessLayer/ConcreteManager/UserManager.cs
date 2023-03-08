@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 using Entities.Dtos;
 using Helper;
 using DataAccessLayer.UnitOfWork;
+using BusinessLayer.AbstractManager;
+using System.Linq;
 
 namespace BusinessLayer
 {
-    public class UserManager
+    public class UserManager: IUserManager
     {
 
         //mail helper must being interface, too
@@ -29,15 +31,31 @@ namespace BusinessLayer
             return await unitOfWork.User.GetAsync(x => x.Id == id);
         }
 
-        public async Task<int> Update(User user)
+        public async Task<List<UserMiniModel>> GetUsers(string searchKeyword)
         {
-            return await unitOfWork.User.Update(user);
+            List<UserMiniModel> userMiniModel = new List<UserMiniModel>();
+            List<User> userList = await unitOfWork.User.FindListAsync(x => x.UserName == searchKeyword);
+
+            foreach (var user in userList)
+            {
+                userMiniModel.Add(new UserMiniModel
+                {
+                    Id = user.Id,
+                    Username = user.UserName,
+                    Firstname = user.FirstName,
+                    Description = user.Description,
+                    Email = user.Email,
+                    PhotoUrl = user.Photourl
+                });
+            }
+            return userMiniModel;
         }
 
-        public async Task<List<User>> GetUsers()
+        public async Task<User> Update(User user)
         {
-            return await unitOfWork.User.GetListAsync();
+            return await unitOfWork.User.UpdateUser(user);
         }
+
 
         public async Task<User> Login(UserForLoginModel userModel)
         {
@@ -140,6 +158,72 @@ namespace BusinessLayer
             }
         }
 
+        public async Task<List<UserMiniModel>> GetSearchedUsers(Dictionary<string, string> searchItems)
+        {
 
+            List<UserMiniModel> userMiniModel = new List<UserMiniModel>();
+            List<User> searchedUserswithUsername = new List<User>();
+            string searchKeyword = searchItems["searchKeyword"];
+            //burdan followeeid'ler geliyor
+            searchedUserswithUsername = await unitOfWork.User.FindListAsync(x => x.UserName == searchKeyword);
+           //followerId
+            string followerId = searchItems["followerId"];
+            List<KeyValuePair<string, string>> ids = new List<KeyValuePair<string, string>>();
+
+            foreach (var user in searchedUserswithUsername)
+            {
+                ids.Add(new KeyValuePair<string, string>("followeeId", user.Id));
+            }
+
+
+            ids.Add(new KeyValuePair<string, string>("followerId", followerId));
+           
+            List<User> userList = await unitOfWork.User.SearchPeopleAsync(ids);
+    
+
+            foreach (var user in userList)
+            {
+                for (int i = 0; i < searchedUserswithUsername.Count; i++)
+                {
+                    if (user.Id == searchedUserswithUsername[i].Id){
+                    searchedUserswithUsername.RemoveAt(i);
+                    }
+                }
+                
+                  
+                
+            }
+
+            foreach (var user in userList)
+            {
+                userMiniModel.Add(new UserMiniModel
+                {
+                    Id = user.Id,
+                    Username = user.UserName,
+                    Firstname = user.FirstName,
+                    Description = user.Description,
+                    Email = user.Email,
+                    PhotoUrl = user.Photourl,
+                    isFollowed = user == null ? false : true,
+                });
+            }
+
+            foreach (var user in searchedUserswithUsername)
+            {
+                userMiniModel.Add(new UserMiniModel
+                {
+                    Id = user.Id,
+                    Username = user.UserName,
+                    Firstname = user.FirstName,
+                    Description = user.Description,
+                    Email = user.Email,
+                    PhotoUrl = user.Photourl,
+                    isFollowed = user != null ? false : true,
+                });
+            }
+            //List<User> result =  searchedUserswithUsername.Except(userList as List<User>) as List<User>;
+          
+            return userMiniModel;
+        }
     }
 }

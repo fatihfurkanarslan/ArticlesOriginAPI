@@ -6,6 +6,8 @@ using System.Collections.Generic;
 
 namespace BlogProject.API.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class SearchController : Controller
     {
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace Entities
 {
     public class Tag
@@ -11,10 +12,12 @@ namespace Entities
         public string OnModifiedUsername { get; set; }
         public string Tags { get; set; }
 
+
+
+        public IList<Note> Notes { get; set; }
+
         //public User User { get; set; }
         //public int? UserId { get; set; }
 
-        public Note Note { get; set; }
-        public int? NoteId { get; set; }
     }
 }

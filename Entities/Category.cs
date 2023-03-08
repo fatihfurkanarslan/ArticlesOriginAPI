@@ -21,6 +21,7 @@ namespace Entities
         public string OnModifiedUsername { get; set; }
         public string PhotoUrl { get; set; }
         public string PublicId { get; set; }
+        public bool Deleted { get; set; }
 
 
         public IList<Note> Notes { get; set; }

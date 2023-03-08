@@ -9,6 +9,8 @@ namespace Entities.Dtos
         public string Title { get; set; }
         public string Text { get; set; }
 
+        public string RAWText { get; set; }
+
         public string MainPhotourl { get; set; }
 
         public string Description { get; set; }

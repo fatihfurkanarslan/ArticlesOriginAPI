@@ -35,6 +35,9 @@ namespace BlogProject.API.Migrations
                         .HasMaxLength(60)
                         .HasColumnType("nvarchar(60)");
 
+                    b.Property<bool>("Deleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(120)
@@ -64,6 +67,9 @@ namespace BlogProject.API.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<bool>("Deleted")
+                        .HasColumnType("bit");
 
                     b.Property<int?>("NoteId")
                         .HasColumnType("int");
@@ -157,6 +163,9 @@ namespace BlogProject.API.Migrations
                     b.Property<int?>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("Deleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
@@ -185,7 +194,6 @@ namespace BlogProject.API.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
-                        .IsRequired()
                         .HasMaxLength(60)
                         .HasColumnType("nvarchar(60)");
 
@@ -242,9 +250,6 @@ namespace BlogProject.API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int?>("NoteId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("OnCreated")
                         .HasColumnType("datetime2");
 
@@ -255,8 +260,6 @@ namespace BlogProject.API.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("NoteId");
 
                     b.ToTable("Tags");
                 });
@@ -275,6 +278,9 @@ namespace BlogProject.API.Migrations
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Deleted")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -492,6 +498,21 @@ namespace BlogProject.API.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("NoteTag", b =>
+                {
+                    b.Property<int>("NotesId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TagsId")
+                        .HasColumnType("int");
+
+                    b.HasKey("NotesId", "TagsId");
+
+                    b.HasIndex("TagsId");
+
+                    b.ToTable("NoteTag");
+                });
+
             modelBuilder.Entity("Entities.Comment", b =>
                 {
                     b.HasOne("Entities.Note", "Note")
@@ -509,17 +530,17 @@ namespace BlogProject.API.Migrations
 
             modelBuilder.Entity("Entities.Follower", b =>
                 {
-                    b.HasOne("Entities.User", "UserFolloweeId")
-                        .WithMany()
+                    b.HasOne("Entities.User", "UserFollowees")
+                        .WithMany("Followees")
                         .HasForeignKey("FolloweeId");
 
-                    b.HasOne("Entities.User", "UserFollowerId")
-                        .WithMany()
+                    b.HasOne("Entities.User", "UserFollowers")
+                        .WithMany("Followers")
                         .HasForeignKey("FollowerId");
 
-                    b.Navigation("UserFolloweeId");
+                    b.Navigation("UserFollowees");
 
-                    b.Navigation("UserFollowerId");
+                    b.Navigation("UserFollowers");
                 });
 
             modelBuilder.Entity("Entities.Like", b =>
@@ -556,15 +577,6 @@ namespace BlogProject.API.Migrations
                 {
                     b.HasOne("Entities.Note", "Note")
                         .WithMany("Photos")
-                        .HasForeignKey("NoteId");
-
-                    b.Navigation("Note");
-                });
-
-            modelBuilder.Entity("Entities.Tag", b =>
-                {
-                    b.HasOne("Entities.Note", "Note")
-                        .WithMany("Tags")
                         .HasForeignKey("NoteId");
 
                     b.Navigation("Note");
@@ -621,6 +633,21 @@ namespace BlogProject.API.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("NoteTag", b =>
+                {
+                    b.HasOne("Entities.Note", null)
+                        .WithMany()
+                        .HasForeignKey("NotesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entities.Tag", null)
+                        .WithMany()
+                        .HasForeignKey("TagsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("Entities.Category", b =>
                 {
                     b.Navigation("Notes");
@@ -633,13 +660,15 @@ namespace BlogProject.API.Migrations
                     b.Navigation("Likes");
 
                     b.Navigation("Photos");
-
-                    b.Navigation("Tags");
                 });
 
             modelBuilder.Entity("Entities.User", b =>
                 {
                     b.Navigation("Comments");
+
+                    b.Navigation("Followees");
+
+                    b.Navigation("Followers");
 
                     b.Navigation("Likes");
 

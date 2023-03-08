@@ -34,15 +34,25 @@ namespace BlogProject.API.Controllers
             return Ok(userToReturn);
         }
 
-        [HttpGet("getusers")]
-        public async Task<IActionResult> GetUsers()
+        [HttpGet("getusers/{searchKeyword}")]
+        public async Task<IActionResult> GetUsers(string searchKeyword)
         {
-            var returnValue = await userManager.GetUsers();
+            var returnValue = await userManager.GetUsers(searchKeyword);
             
             return Ok(returnValue);
         }
 
-    
+        [HttpGet("getsearchedusers")]
+        public async Task<IActionResult> GetSearchedUsers([FromQuery] Dictionary<string, string> searchItems)
+        {
+            var returnValue = await userManager.GetSearchedUsers(searchItems);
+
+            return Ok(returnValue); 
+        }
+
+
+
+
         [HttpPut("update")]
         public async Task<IActionResult> UpdateUser(UserDetailModel model)
         {

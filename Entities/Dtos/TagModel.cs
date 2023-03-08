@@ -6,6 +6,6 @@ namespace Entities.Dtos
 {
     public class TagModel
     {
-        public string tag { get; set; }
+        public string tagParam { get; set; }
     }
 }

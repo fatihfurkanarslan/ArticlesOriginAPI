@@ -25,5 +25,11 @@ namespace BusinessLayer.ConcreteManager
         {
             return await unitOfWork.Follower.Insert(follower);
         }
+
+        public async Task<int> RemoveFollower(Follower follower)
+        {
+            return await unitOfWork.Follower.Remove(follower);
+        }
+
     }
 }

@@ -9,7 +9,7 @@ namespace Entities
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Title field is a required.")]
+        //[Required(ErrorMessage = "Title field is a required.")]
         [MaxLength(60, ErrorMessage = "Maximum length is 60 characters for title you text")]
         public string Title { get; set; }
         public string Description { get; set; }
@@ -23,6 +23,8 @@ namespace Entities
         public bool IsDraft { get; set; }
         public string MainPhotourl { get; set; }
 
+        public bool Deleted { get; set; }
+
         public IList<Comment> Comments { get; set; }
         public IList<Like> Likes { get; set; }
         public IList<Photo> Photos { get; set; }
@@ -33,5 +35,6 @@ namespace Entities
 
         public Category Category { get; set; }
         public int? CategoryId { get; set; }
+
     }
 }

@@ -20,7 +20,14 @@ namespace BlogProject.API.Controllers
         public async Task<IActionResult> FollowUser(Follower follower)
         {
             int result = await followerManager.InsertFollower(follower);
-            return StatusCode(201);
+            return Ok(result);
+        }
+
+        [HttpPost("unfollow")]
+        public async Task<IActionResult> UnfollowUser(Follower follower)
+        {
+            int result = await followerManager.RemoveFollower(follower);
+            return Ok(result);
         }
     }
 }

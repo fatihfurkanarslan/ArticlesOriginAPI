@@ -42,7 +42,8 @@ namespace BusinessLayer
 
         public async Task<int> Delete(Comment comment)
         {
-            return await unitOfWork.Comment.Remove(comment);
+            comment.Deleted = true;
+            return await unitOfWork.Comment.UpdateDeleteColumn(comment);
         }
     }
 }

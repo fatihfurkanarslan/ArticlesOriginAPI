@@ -16,11 +16,13 @@ namespace BlogProject.API.Controllers
     public class TagController : Controller
     {
         private readonly TagManager tagManager;
+        private readonly NoteManager noteManager;
         private readonly IMapper mapper;
 
-        public TagController(TagManager _tagManager, IMapper _mapper)
+        public TagController(TagManager _tagManager, IMapper _mapper, NoteManager _noteManager)
         {
             tagManager = _tagManager;
+            noteManager = _noteManager;
             mapper = _mapper;
         }
 
@@ -32,18 +34,24 @@ namespace BlogProject.API.Controllers
             //var insertValue = mapper.Map<Tag>(tagModel);
             if (tagModel != null)
             {
-                for (int i = 0; i < tagModel.tags.Count; i++)
+                await tagManager.Insert(tagModel);
+
+
+                //for (int i = 0; i < tagModel.tags.Count; i++)
+                //{
+                //    // tag = tagModel.tags[i];
+                //    Tag tagToInsert = new Tag()
+                //    {
+                //        Tags = tagModel.tags[i],
+                //        OnCreated = DateTime.Now
+                //    };
+                //    //await tagManager.Insert(insertValue);
+                //    await tagManager.Insert(tagToInsert);
+                //}
+
                 {
-                    // tag = tagModel.tags[i];
-                    Tag tagToInsert = new Tag()
-                    {
-                        NoteId = tagModel.NoteId,
-                        Tags = tagModel.tags[i],
-                        OnCreated = DateTime.Now
-                    };
-                    //await tagManager.Insert(insertValue);
-                    await tagManager.Insert(tagToInsert);
-                }
+                    //first get notes then insert notes to tags
+                };
 
                 return Ok(200);
             }
@@ -52,19 +60,19 @@ namespace BlogProject.API.Controllers
             return StatusCode(400);
         }
 
-        [HttpGet("gettags/{id}")]
-        public IActionResult GetTags(int id)
-        {
-            List<Tag> tags = tagManager.GetTags(id);
+        //[HttpPost("getnotesbytag")]
+        //public async Task<IActionResult> GetNotes(TagModel tag)
+        //{
+        //    List<Tag> notes = await tagManager.GetTags(tag.tagParam);
 
-            return Ok(tags);
-        }
+        //    return Ok(notes);
+        //}
 
         //[HttpPost("getnotesbytag")]
         //public IActionResult GetNotesByTag(TagModel tag)
         //{    
         //    List<Tag> tags = tagManager.GetNotesByTag(tag.tag);
-            
+
         //    return Ok(tags);
         //}
 

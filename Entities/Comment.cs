@@ -23,5 +23,7 @@ namespace Entities
         public Note Note { get; set; }
         public int? NoteId { get; set; }
 
+        public bool Deleted { get; set; }     
+
     }
 }

@@ -30,7 +30,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+
 using NLog;
+using static System.Reflection.Metadata.BlobBuilder;
 
 
 namespace BlogProject.API
@@ -68,10 +70,11 @@ namespace BlogProject.API
                 options.SuppressModelStateInvalidFilter = true;
             });
 
-            string connection = @"Server=DESKTOP-LDVGTNI\SQLEXPRESS;Database=BlogProject;Trusted_Connection=True;MultipleActiveResultSets=true";
+            string connection = @"Server=DESKTOP-NUSVQGT\SQLEXPRESS;Database=BlogProject;Trusted_Connection=True;MultipleActiveResultSets=true";
             //db connection
             services.AddDbContext<BlogContext>(
                 options => options.UseSqlServer(connection, b => b.MigrationsAssembly("BlogProject.API"))
+
                 );
 
             //user settings
@@ -149,7 +152,7 @@ namespace BlogProject.API
          
             services.Configure<MailSettings>(Configuration.GetSection("MailHelperSettings"));
 
-
+           // services.AddElasticsearch(Configuration.GetSection("ELKConfiguration"));
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(options => {

@@ -93,7 +93,15 @@ namespace BusinessLayer
 
         public async Task<int> Delete(Note note)
         {
-            return await unitOfWork.Note.Remove(note);
+            note.Deleted = true;
+            return await unitOfWork.Note.UpdateDeleteColumn(note);
+        }
+
+        public async Task<List<Note>> GetNotesbyTag(string tag)
+        {
+            // var returnValues = await tagRepository.IncludeAsync(x => x.NoteId == id);
+            var returnValues = unitOfWork.Note.IncludeSingleAsync(tag);
+            return await returnValues;
         }
     }
 }
