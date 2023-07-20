@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/aJuVWuUAokakygFdt6dBY1R0Qomg4D5Isl3NC9uvtK7h4hURvQ8r1kPmJiaVXi+fQ5bPGbvysaSfIWUmTvZ9w==",
+  "dgSpecHash": "XpjR2Vs4A261PhHG7voDIcUqtCd9ZZ6Pz4DCGX9wBxgVylP0WuBEegfVyCJGj09l+heKS4xmJVaFc6utCeum7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\ArticlesOriginAPI\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fatih Furkan Arslan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Fatih Furkan Arslan\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.6\\microsoft.aspnetcore.cryptography.internal.6.0.6.nupkg.sha512",

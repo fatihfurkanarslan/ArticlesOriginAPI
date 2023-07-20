@@ -41,7 +41,7 @@ namespace BlogProject.API
     {
         public Startup(IConfiguration configuration)
         {
-            LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/NLog.config"));
+            LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
             Configuration = configuration;
         }
 
@@ -70,12 +70,25 @@ namespace BlogProject.API
                 options.SuppressModelStateInvalidFilter = true;
             });
 
-            string connection = @"Server=DESKTOP-NUSVQGT\SQLEXPRESS;Database=BlogProject;Trusted_Connection=True;MultipleActiveResultSets=true";
-            //db connection
-            services.AddDbContext<BlogContext>(
-                options => options.UseSqlServer(connection, b => b.MigrationsAssembly("BlogProject.API"))
+            //string connection = @"Server=DESKTOP-NUSVQGT\SQLEXPRESS;Database=BlogProject;Trusted_Connection=True;MultipleActiveResultSets=true";
+            ////db connection
 
-                );
+            //services.AddDbContext<BlogContext>(
+            //    options => options.UseSqlServer(connection, b => b.MigrationsAssembly("BlogProject.API"))
+
+            //    );
+
+
+            string connectionString = Configuration.GetConnectionString("TestConnection");
+            if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+            {
+                connectionString = Configuration.GetConnectionString("ProductConnection");
+            }
+
+            services.AddDbContext<BlogContext>(options =>
+                options.UseSqlServer(connectionString, b => b.MigrationsAssembly("BlogProject.API"))
+            );
+
 
             //user settings
             services.AddIdentity<User, IdentityRole>(
@@ -195,7 +208,10 @@ namespace BlogProject.API
 
             //marvin.cache.header supports like cache-control, expires, etag, last-modified
             app.UseHttpCacheHeaders();
+            
 
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
             //support on .core 2.2
             //app.UseMvc();
 

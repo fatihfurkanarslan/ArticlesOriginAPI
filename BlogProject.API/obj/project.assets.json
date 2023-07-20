@@ -11255,11 +11255,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BlogProject.API\\BlogProject.API.csproj",
+      "projectUniqueName": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\ArticlesOriginAPI\\BlogProject.API\\BlogProject.API.csproj",
       "projectName": "BlogProject.API",
-      "projectPath": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BlogProject.API\\BlogProject.API.csproj",
+      "projectPath": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\ArticlesOriginAPI\\BlogProject.API\\BlogProject.API.csproj",
       "packagesPath": "C:\\Users\\Fatih Furkan Arslan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BlogProject.API\\obj\\",
+      "outputPath": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\ArticlesOriginAPI\\BlogProject.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Fatih Furkan Arslan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -11276,14 +11276,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\BusinessLayer\\BusinessLayer.csproj"
+            "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\ArticlesOriginAPI\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\ArticlesOriginAPI\\BusinessLayer\\BusinessLayer.csproj"
             },
-            "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\ArticlesOriginAPI\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Helper\\Helper.csproj": {
-              "projectPath": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Helper\\Helper.csproj"
+            "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\ArticlesOriginAPI\\Helper\\Helper.csproj": {
+              "projectPath": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\ArticlesOriginAPI\\Helper\\Helper.csproj"
             }
           }
         }

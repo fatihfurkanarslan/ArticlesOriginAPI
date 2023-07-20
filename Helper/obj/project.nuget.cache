@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s8rsmZgZ2Bd8KR8V+z2d+Qf2A0uP+JQ0WSh7ZnOAlYQN68rgmUj6QUrMOkIIfDEawJrNOtZeqhJfM2qsHOkpOg==",
+  "dgSpecHash": "cD16DBrU5IABLOy7tbfMDvLls05JzZ057BpbuEPv3a+Y2emf1ptvuNy7ZQqrowrPwjdSO3EF5/1K2/jhbGzTZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\LatestVersion-BlogProject\\ArticlesOriginAPI\\Helper\\Helper.csproj",
+  "projectFilePath": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\ArticlesOriginAPI\\Helper\\Helper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fatih Furkan Arslan\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Fatih Furkan Arslan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

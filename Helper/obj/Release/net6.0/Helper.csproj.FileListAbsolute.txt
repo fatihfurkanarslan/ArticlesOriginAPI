@@ -1,0 +1,17 @@
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\bin\Release\net6.0\Helper.deps.json
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\bin\Release\net6.0\Helper.runtimeconfig.json
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\bin\Release\net6.0\Helper.dll
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\bin\Release\net6.0\Helper.pdb
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\bin\Release\net6.0\Entities.dll
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\bin\Release\net6.0\Entities.pdb
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\obj\Release\net6.0\Helper.csproj.AssemblyReference.cache
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\obj\Release\net6.0\Helper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\obj\Release\net6.0\Helper.AssemblyInfoInputs.cache
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\obj\Release\net6.0\Helper.AssemblyInfo.cs
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\obj\Release\net6.0\Helper.csproj.CoreCompileInputs.cache
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\obj\Release\net6.0\Helper.csproj.CopyComplete
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\obj\Release\net6.0\Helper.dll
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\obj\Release\net6.0\refint\Helper.dll
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\obj\Release\net6.0\Helper.pdb
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\obj\Release\net6.0\Helper.genruntimeconfig.cache
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\Helper\obj\Release\net6.0\ref\Helper.dll
