@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "73FafFIAzTlXeHt0qetds+9qSNaSjBlEbmz4FL2ClJQcpfJ7LFkJpSuMOYqrKvoGGoTXrovRmKP8WQz/ImxyUA==",
+  "dgSpecHash": "ZnYvlt/Sd98R8GzAiUA2I4LrofgfL44Vm2B8/gZAj/XPXp3+xJjB36cZRSksP23OQzOdN3k9HKWNATo+TJzUDA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Fatih Furkan Arslan\\Desktop\\Github\\ArticlesOriginAPI\\BlogProject.API.UnitTest\\BlogProject.API.UnitTest.csproj",
   "expectedPackageFiles": [
@@ -102,6 +102,7 @@
     "C:\\Users\\Fatih Furkan Arslan\\.nuget\\packages\\nlog.extensions.logging\\5.0.0\\nlog.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\Fatih Furkan Arslan\\.nuget\\packages\\nlog.web.aspnetcore\\5.0.0\\nlog.web.aspnetcore.5.0.0.nupkg.sha512",
     "C:\\Users\\Fatih Furkan Arslan\\.nuget\\packages\\npgsql\\7.0.4\\npgsql.7.0.4.nupkg.sha512",
+    "C:\\Users\\Fatih Furkan Arslan\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.5\\npgsql.entityframeworkcore.postgresql.6.0.5.nupkg.sha512",
     "C:\\Users\\Fatih Furkan Arslan\\.nuget\\packages\\nuget.common\\5.11.0\\nuget.common.5.11.0.nupkg.sha512",
     "C:\\Users\\Fatih Furkan Arslan\\.nuget\\packages\\nuget.configuration\\5.11.0\\nuget.configuration.5.11.0.nupkg.sha512",
     "C:\\Users\\Fatih Furkan Arslan\\.nuget\\packages\\nuget.dependencyresolver.core\\5.11.0\\nuget.dependencyresolver.core.5.11.0.nupkg.sha512",

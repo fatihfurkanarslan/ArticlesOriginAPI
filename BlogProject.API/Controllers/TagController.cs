@@ -28,7 +28,7 @@ namespace BlogProject.API.Controllers
 
    
         [HttpPost("insert")]
-        public async Task<IActionResult> InsertTag(TagInsertModel tagModel)
+        public async Task<IActionResult> InsertTag([FromBody]TagInsertModel tagModel)
         {
             //string tag;
             //var insertValue = mapper.Map<Tag>(tagModel);

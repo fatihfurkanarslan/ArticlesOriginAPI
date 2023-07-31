@@ -81,7 +81,7 @@ namespace BlogProject.API.Controllers
         public async Task<IActionResult> GetNotes([FromQuery] NoteParams noteParams)
         {
             //logging test
-            logger.LogInfo("it works!!");
+            //logger.LogInfo("it works!!");
             var notes = await noteManager.GetNotesByDescending(noteParams);
 
             Response.AddPagination(notes.CurrentPage, notes.PageSize, notes.TotalCount, notes.TotalPages);
@@ -198,7 +198,7 @@ namespace BlogProject.API.Controllers
             return StatusCode(201);
         }
 
-        [HttpDelete("delete/{id}")]
+        [HttpPost("delete/{id}")]
         public async Task<IActionResult> DeleteNote(int id)
         {
 
@@ -208,8 +208,8 @@ namespace BlogProject.API.Controllers
             return Ok();
         }
 
-        [ServiceFilter(typeof(ValidationFilterAttribute))]
-        [HttpPut("update")]
+        //[ServiceFilter(typeof(ValidationFilterAttribute))]
+        [HttpPost("update")]
         public async Task<IActionResult> UpdateNote([FromBody]NoteUpdateModel noteModel)
         {
           Note note = await noteManager.GetNote(noteModel.Id);
@@ -235,9 +235,9 @@ namespace BlogProject.API.Controllers
                 return Ok(result);
         }
 
-        [ServiceFilter(typeof(ValidationFilterAttribute))]
-        [HttpPut("updateImage")]
-        public async Task<IActionResult> UpdateNoteImage(NoteUpdateModel noteModel)
+        //[ServiceFilter(typeof(ValidationFilterAttribute))]
+        [HttpPost("updateImage")]
+        public async Task<IActionResult> UpdateNoteImage([FromBody]NoteUpdateModel noteModel)
         {
             Note note = await noteManager.GetNote(noteModel.Id);
 

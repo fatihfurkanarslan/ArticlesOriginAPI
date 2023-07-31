@@ -96,7 +96,7 @@ namespace BlogProject.API.Controllers
             return Ok(result);
         }
 
-        [HttpDelete("delete/{id}")]
+        [HttpPost("delete/{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
             if (id < 0) BadRequest("Invalid category id");
@@ -107,7 +107,7 @@ namespace BlogProject.API.Controllers
             return Ok();
         }
 
-        [HttpPut("update")]
+        [HttpPost("update")]
         public async Task<IActionResult> UpdateCategory([FromForm]CategoryUpdateModel categoryModel)
         {
 

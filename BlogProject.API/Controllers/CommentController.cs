@@ -17,10 +17,10 @@ namespace BlogProject.API.Controllers
     [ApiController]
     public class CommentController : Controller
     {
-        private readonly ICommentManager commentManager;
+        private readonly CommentManager commentManager;
         private readonly IMapper mapper;
 
-        public CommentController(ICommentManager _commentManager, IMapper _mapper)
+        public CommentController(CommentManager _commentManager, IMapper _mapper)
         {
             commentManager = _commentManager;
             mapper = _mapper;
@@ -36,10 +36,10 @@ namespace BlogProject.API.Controllers
             return Ok(comment);
         }
 
-        [HttpGet("getcomments")]
-        public async Task<IActionResult> GetComments()
+        [HttpGet("getcomments/{id}")]
+        public async Task<IActionResult> GetComments(int id)
         {
-            var comments = await commentManager.GetComments();
+            var comments = await commentManager.GetComments(id);
 
             // var categoryToReturn = mapper.Map<UserDetailModel>(category);
 
@@ -57,7 +57,7 @@ namespace BlogProject.API.Controllers
             return StatusCode(201);
         }
 
-        [HttpDelete("delete/{id}")]
+        [HttpPost("delete/{id}")]
         public async Task<IActionResult> DeleteComment(int id)
         {
 
@@ -67,7 +67,7 @@ namespace BlogProject.API.Controllers
             return StatusCode(201);
         }
 
-        [HttpPut("update")]
+        [HttpPost("update")]
         public async Task<IActionResult> DeleteComment(CommentUpdateModel commentModel)
         {
 

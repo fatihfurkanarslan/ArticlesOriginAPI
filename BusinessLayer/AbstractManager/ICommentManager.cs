@@ -9,7 +9,7 @@ namespace BusinessLayer.AbstractManager
     public interface ICommentManager
     {
         Task<Comment> GetComment(int id);
-        Task<List<Comment>> GetComments();
+        Task<List<Comment>> GetComments(int id);
 
         Task<int> Insert(Comment comment);
         Task<int> Update(Comment comment);

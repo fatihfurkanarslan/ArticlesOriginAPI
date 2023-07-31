@@ -14,7 +14,7 @@ namespace Helper.Filters
         private readonly ILoggerManager logger;
         public ValidationFilterAttribute(ILoggerManager _logger)
         {
-            logger = _logger;
+            //logger = _logger;
         }
 
         public void OnActionExecuted(ActionExecutedContext context)
@@ -30,14 +30,14 @@ namespace Helper.Filters
             var param = context.ActionArguments.SingleOrDefault(x => x.Value.ToString().Contains("Dto")).Value;
             if (param == null)
             {
-                logger.LogError($"Object sent from client is null. Controller: {controller}, Action: {action}");
+               // logger.LogError($"Object sent from client is null. Controller: {controller}, Action: {action}");
                 context.Result = new BadRequestObjectResult($"Object is null.  Controller: {controller}, Action: {action}");
                 return;
             }
 
             if (!context.ModelState.IsValid)
             {
-                logger.LogError($"Invalid model state for the object. Controller: {controller}, Action: {action}");
+                //logger.LogError($"Invalid model state for the object. Controller: {controller}, Action: {action}");
                 context.Result = new UnprocessableEntityObjectResult(context.ModelState);
             }
         }

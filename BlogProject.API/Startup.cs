@@ -39,9 +39,10 @@ namespace BlogProject.API
 {
     public class Startup
     {
+        readonly string ApiCorsPolicy = "_apiCorsPolicy";
         public Startup(IConfiguration configuration)
         {
-            LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
+            //LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
             Configuration = configuration;
         }
 
@@ -79,15 +80,20 @@ namespace BlogProject.API
             //    );
 
 
-            string connectionString = Configuration.GetConnectionString("TestConnection");
-            if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
-            {
-                connectionString = Configuration.GetConnectionString("ProductConnection");
-            }
+            //string connectionString = Configuration.GetConnectionString("TestConnection");
+            //if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+            //{
+            //    connectionString = Configuration.GetConnectionString("ProductConnection");
+            //}
+            string connectionString = Configuration.GetConnectionString("ProductConnection");
 
             services.AddDbContext<BlogContext>(options =>
                 options.UseSqlServer(connectionString, b => b.MigrationsAssembly("BlogProject.API"))
             );
+            //services.AddDbContext<BlogContext>(options =>
+            //{
+            //    options.UseNpgsql(connectionString);
+            //});
 
 
             //user settings
@@ -135,7 +141,7 @@ namespace BlogProject.API
             services.AddScoped<ValidationFilterAttribute>();
 
             //services.AddScoped(typeof(CommentManager));
-            services.AddScoped<ICommentManager, CommentManager>();  
+            //services.AddScoped<ICommentManager, CommentManager>();  
 
             services.AddScoped(typeof(UserManager));
             services.AddScoped(typeof(TagManager));
@@ -178,13 +184,40 @@ namespace BlogProject.API
                     ValidateAudience = false
                 };
             });
-            services.AddCors();
+            //services.AddCors();
+            services.AddCors(options => options.AddPolicy(ApiCorsPolicy, builder =>
+            {
+                builder.WithOrigins(
+                    "http://www.articlesorigin.com",
+                    "https://www.articlesorigin.com",
+                    "http://localhost:4200",
+                    "http://articlesorigin.com",
+                    "https://articlesorigin.com"
+                    )
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials();
+            }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, MyInitiliazer seeder, ILoggerManager logger)
         {
+            //app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            //app.UseCors(builder =>
+            //{
+            //    builder.WithOrigins(
+            //        "http://www.articlesorigin.com",
+            //        "https://www.articlesorigin.com",
+            //        "http://localhost:4200",
+            //        "http://articlesorigin.com"
+            //    )
+            //    .AllowAnyMethod()
+            //    .AllowAnyHeader();
+            //});
+       
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -194,11 +227,15 @@ namespace BlogProject.API
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            app.UseRouting();
+
+            app.UseCors(ApiCorsPolicy);
+            //app.UseCorsMiddleware();
+
             //ConfigureExceptionHandler method is prepared in ErrorHandler folder to catch error and log them.
-            app.ConfigureExceptionHandler(logger);
+            //app.ConfigureExceptionHandler(logger);
             //seeder.Seed();
-            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
-        
+
             //app.UseHttpsRedirection();
             //useauthentication methodu sayesinde
             app.UseAuthentication();
@@ -210,13 +247,13 @@ namespace BlogProject.API
             app.UseHttpCacheHeaders();
             
 
-            app.UseDefaultFiles();
+            app.UseDefaultFiles();  
             app.UseStaticFiles();
             //support on .core 2.2
             //app.UseMvc();
 
             //instead of app.UseMvc()
-            app.UseRouting();
+         
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

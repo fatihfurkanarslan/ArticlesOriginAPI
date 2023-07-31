@@ -53,7 +53,7 @@ namespace BlogProject.API.Controllers
 
 
 
-        [HttpPut("update")]
+        [HttpPost("update")]
         public async Task<IActionResult> UpdateUser(UserDetailModel model)
         {
             User user = await userManager.GetUser(model.Id);

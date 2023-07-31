@@ -40,7 +40,7 @@ namespace DataAccessLayer
 
             };
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 5; i++)
             {
                    User user1 = new User
             {
@@ -62,7 +62,7 @@ namespace DataAccessLayer
             context.Users.Add(user1);
             }
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 5; i++)
             {
                 Category cat = new Category
                 {
@@ -75,7 +75,7 @@ namespace DataAccessLayer
 
                 context.Categories.Add(cat);
 
-                for (int j = 0; j < 10; j++)
+                for (int j = 0; j < 5; j++)
                 {
                     Note note = new Note
                     {
@@ -92,7 +92,7 @@ namespace DataAccessLayer
                     };
                     context.Notes.Add(note);
 
-                    for (int k = 0; k < 10; k++)
+                    for (int k = 0; k < 5; k++)
                     {
                         Comment comment = new Comment
                         {
@@ -107,7 +107,7 @@ namespace DataAccessLayer
 
                     }
 
-                    for (int l = 0; l < 10; l++)
+                    for (int l = 0; l < 5; l++)
                     {
                         Like like = new Like
                         {
@@ -120,7 +120,7 @@ namespace DataAccessLayer
 
                     }
 
-                    for (int l = 0; l < 10; l++)
+                    for (int l = 0; l < 5; l++)
                     {
                         Photo photo = new Photo
                         {

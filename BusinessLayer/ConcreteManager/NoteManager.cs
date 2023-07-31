@@ -68,7 +68,7 @@ namespace BusinessLayer
 
         public async Task<Note> GetNote(int id)
         {
-            var returnValue = await unitOfWork.Note.GetIncludeAsync(x => x.Id == id, "Comments", "Likes");
+            var returnValue = await unitOfWork.Note.GetIncludeAsync(x => x.Id == id, "Comments", "Likes", "Tags");
             return returnValue;
         }
 

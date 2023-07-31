@@ -77,10 +77,12 @@ namespace BusinessLayer
             byte[] passwordSalt;
             string passwordHash;
 
+            //User checkUser = null;
+
             User checkUser = await unitOfWork.User.GetAsync(x => x.UserName == registerModel.username || x.Email == registerModel.email);
 
-            //if (checkUser == null)
-            //{
+            if (checkUser == null)
+            {
                 CreatePasswordHash(registerModel.password, out passwordHash, out passwordSalt);
 
                 var check = unitOfWork.User.Insert(new User
@@ -97,7 +99,7 @@ namespace BusinessLayer
                 {
                     User user = await unitOfWork.User.GetAsync(x => x.UserName == registerModel.username);
 
-                    string activeUri = $"http://localhost:4200/useractivate/{user.ActivatedGuid}";
+                    string activeUri = $"http://www.articlesorigin.com/useractivate/{user.ActivatedGuid}";
 
                     string body = $"Merhaba {user.UserName} <br><br> Hesabýnýzý" + $"aktifleþtirmek için <a href='{activeUri}' target='_blank'>týklayýnýz</a>.";
 
@@ -106,11 +108,11 @@ namespace BusinessLayer
                 }
                 return null;
 
-            //}
-            //else
-            //{
-            //    return null;
-            //}
+        }
+            else
+            {
+                return null;
+            }
 
           
         }

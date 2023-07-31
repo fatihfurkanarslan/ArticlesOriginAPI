@@ -2124,6 +2124,21 @@
           }
         }
       },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/6.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.5",
+          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.5",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.5",
+          "Npgsql": "6.0.5"
+        },
+        "compile": {
+          "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+        }
+      },
       "NuGet.Common/5.11.0": {
         "type": "package",
         "dependencies": {
@@ -6723,6 +6738,20 @@
         "postgresql.png"
       ]
     },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/6.0.5": {
+      "sha512": "1eAaz5CwwZbATraqYyYsG2tMWZM1ydyLmQVpFGTzkUUKB/sAL5QWB0IfjSxOjiIDp5JY1WoFndkcaGMEcexVXg==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql/6.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "npgsql.entityframeworkcore.postgresql.6.0.5.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec",
+        "postgresql.png"
+      ]
+    },
     "NuGet.Common/5.11.0": {
       "sha512": "WCHexQBfSqBDRqP3PSDSUw7YM+PwuvMHGAkT/sXI5UHze4T41yLE+VB/km2Fe0z9y3m2mudcr2djFZezivjMJw==",
       "type": "package",
@@ -10915,6 +10944,7 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.6",
       "NLog >= 5.0.1",
       "Npgsql >= 7.0.4",
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.5",
       "System.Drawing.Common >= 6.0.0"
     ]
   },
@@ -11032,6 +11062,10 @@
           "Npgsql": {
             "target": "Package",
             "version": "[7.0.4, )"
+          },
+          "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "target": "Package",
+            "version": "[6.0.5, )"
           },
           "System.Drawing.Common": {
             "target": "Package",

@@ -19,9 +19,9 @@ namespace BusinessLayer
             unitOfWork = _unitOfWork;
         }
 
-        public async Task<List<Comment>> GetComments()
+        public async Task<List<Comment>> GetComments(int id)
         {
-            return await unitOfWork.Comment.GetListAsync();
+            return await unitOfWork.Comment.FindListAsync(x => x.NoteId == id);
            
         }
         public async Task<Comment> GetComment(int id)
