@@ -1,5 +1,6 @@
 ﻿using DataAccessLayer.AbstractRepositories;
 using Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -64,6 +65,23 @@ namespace DataAccessLayer.Repositories
             blogContext.SaveChanges();
             User returnUser = await dbSetObject.Where(x => x.Id == user.Id).FirstOrDefaultAsync();
             return returnUser;
+        }
+
+
+        public async Task<IdentityResult> AddLoginAsync(User user, UserLoginInfo login)
+        {
+            // Giriş bilgisini veritabanına ekleyin.
+            var loginEntity = new IdentityUserLogin<string>
+            {
+                UserId = user.Id,
+                LoginProvider = login.LoginProvider,
+                ProviderKey = login.ProviderKey
+            };
+
+            blogContext.UserLogins.Add(loginEntity);
+            await blogContext.SaveChangesAsync();
+
+            return IdentityResult.Success; // İşlem başarılı olduysa dönüş değeri
         }
     }
 }

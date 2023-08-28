@@ -1,4 +1,5 @@
 ﻿using Entities;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -12,6 +13,8 @@ namespace DataAccessLayer.AbstractRepositories
          Task<List<User>> SearchPeopleAsync(List<KeyValuePair<string, string>> ids);
 
         Task<User> UpdateUser(User user);
+
+        Task<IdentityResult> AddLoginAsync(User user, UserLoginInfo login);
 
     }
 

@@ -74,16 +74,29 @@ namespace BusinessLayer
 
         public async Task<int> Insert(Note note)
         {
-            int result = await unitOfWork.Note.Insert(note);
+            User user = await unitOfWork.User.GetAsync(x => x.Id == note.UserId);
 
-            if((result is 1) && (note.IsDraft is true ))
+            if (user == null)
             {
+                return 0;
+            }
+            else
+            {
+                note.OnModifiedUsername = user.UserName;
 
-              // notificationHub.Clients.User.SendAsync("", "messega");
+                int result = await unitOfWork.Note.Insert(note);
 
+                if ((result is 1) && (note.IsDraft is true))
+                {
+
+                    // notificationHub.Clients.User.SendAsync("", "messega");
+
+                }
+
+                return result;
             }
 
-            return result;
+           
         }
 
         public async Task<int> Update(Note note)

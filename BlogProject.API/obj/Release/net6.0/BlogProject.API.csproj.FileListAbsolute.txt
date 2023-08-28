@@ -603,3 +603,7 @@ C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\ob
 C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\bin\Release\net6.0\appsettings.Development.json
 C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\bin\Release\net6.0\Npgsql.dll
 C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\bin\Release\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\bin\Release\net6.0\Google.Apis.dll
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\bin\Release\net6.0\Google.Apis.Auth.PlatformServices.dll
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\bin\Release\net6.0\Google.Apis.Auth.dll
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\bin\Release\net6.0\Google.Apis.Core.dll

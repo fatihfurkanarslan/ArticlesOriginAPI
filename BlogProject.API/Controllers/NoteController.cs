@@ -212,7 +212,7 @@ namespace BlogProject.API.Controllers
         [HttpPost("update")]
         public async Task<IActionResult> UpdateNote([FromBody]NoteUpdateModel noteModel)
         {
-          Note note = await noteManager.GetNote(noteModel.Id);
+           Note note = await noteManager.GetNote(noteModel.Id);
 
             if(note.MainPhotourl != null)
             {
@@ -250,7 +250,8 @@ namespace BlogProject.API.Controllers
                 
                 note.Title = noteModel.Title;
                 note.Description = noteModel.Description;
-                note.MainPhotourl = noteModel.MainPhotourl;          
+                note.MainPhotourl = noteModel.MainPhotourl;
+                note.IsDraft = noteModel.isDraft;
 
                 int result = await noteManager.Update(note);
 

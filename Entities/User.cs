@@ -35,7 +35,6 @@ namespace Entities
 
         public bool Deleted { get; set; }
 
-
         // Bir kullanıcının birçok beğenisi yorumu ve yazısı var.
         public IList<Note> Notes { get; set; }
         public IList<Comment> Comments { get; set; }

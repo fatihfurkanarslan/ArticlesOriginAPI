@@ -80,12 +80,12 @@ namespace BlogProject.API
             //    );
 
 
-            //string connectionString = Configuration.GetConnectionString("TestConnection");
-            //if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
-            //{
-            //    connectionString = Configuration.GetConnectionString("ProductConnection");
-            //}
-            string connectionString = Configuration.GetConnectionString("ProductConnection");
+            string connectionString = Configuration.GetConnectionString("TestConnection");
+            if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Production")
+            {
+                connectionString = Configuration.GetConnectionString("ProductConnection");
+            }
+            //string connectionString = Configuration.GetConnectionString("ProductConnection");
 
             services.AddDbContext<BlogContext>(options =>
                 options.UseSqlServer(connectionString, b => b.MigrationsAssembly("BlogProject.API"))
@@ -155,6 +155,7 @@ namespace BlogProject.API
 
             services.AddSingleton(typeof(MailHelper));
             services.AddSingleton(typeof(JWTCreater));
+            services.AddTransient<IGoogleIdTokenValidationService, GoogleIdTokenValidationService>();
             services.AddScoped(typeof(BlogContext));
             services.AddTransient<MyInitiliazer>();
 

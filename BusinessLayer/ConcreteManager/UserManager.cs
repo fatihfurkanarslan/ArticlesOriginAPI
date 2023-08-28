@@ -9,6 +9,11 @@ using Helper;
 using DataAccessLayer.UnitOfWork;
 using BusinessLayer.AbstractManager;
 using System.Linq;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json.Linq;
+using static BusinessLayer.UserManager;
 
 namespace BusinessLayer
 {

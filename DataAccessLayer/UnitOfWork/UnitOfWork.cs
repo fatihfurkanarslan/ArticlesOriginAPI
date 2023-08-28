@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.UnitOfWork
 {
-    public class UnitOfWork : IUnitOfWork, IDisposable
+    public class UnitOfWork : IUnitOfWork
+        ,IDisposable   
     {
         private BlogContext context;
 

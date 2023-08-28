@@ -1,5 +1,6 @@
 ﻿using Helper;
 using Microsoft.EntityFrameworkCore;
+using NLog.LayoutRenderers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,17 @@ namespace DataAccessLayer
 
         public async Task<T> GetAsync(Expression<Func<T, bool>> filter)
         {
-            return await dbSetObject.FirstOrDefaultAsync(filter);
+            try
+            {
+                return await dbSetObject.FirstOrDefaultAsync(filter);
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+            
         }
 
         public async Task<int> Insert(T entity)

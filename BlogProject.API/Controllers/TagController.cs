@@ -57,7 +57,7 @@ namespace BlogProject.API.Controllers
             }
             
             
-            return StatusCode(400);
+            return Ok("No tag is inserted.");
         }
 
         //[HttpPost("getnotesbytag")]

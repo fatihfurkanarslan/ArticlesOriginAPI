@@ -1,4 +1,6 @@
 ﻿using Entities;
+using Entities.Dtos;
+using Google.Apis.Auth;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -58,6 +60,29 @@ namespace Helper.JWTToken
             return tokenHandler.WriteToken(token);
           
         }
+
+
+        public async Task<GoogleJsonWebSignature.Payload> VerifyGoogleToken(ExternalAuthDto externalAuth)
+        {
+            try
+            {
+                var settings = new GoogleJsonWebSignature.ValidationSettings()
+                {
+                    Audience = new List<string>() { config["ExternalLogin:Google-Client-Id"] }
+                };
+            
+
+                var payload = await GoogleJsonWebSignature.ValidateAsync(externalAuth.IdToken, settings);
+
+                return payload;
+            }
+            catch (Exception ex)
+            {
+                //log an exception
+                return null;
+            }
+        }
+
 
     }
 }

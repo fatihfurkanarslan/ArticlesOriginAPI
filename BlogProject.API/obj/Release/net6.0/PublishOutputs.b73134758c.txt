@@ -8,6 +8,10 @@ C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\ob
 C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\obj\Release\net6.0\PubTmp\Out\AutoMapper.dll
 C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\obj\Release\net6.0\PubTmp\Out\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\obj\Release\net6.0\PubTmp\Out\CloudinaryDotNet.dll
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\obj\Release\net6.0\PubTmp\Out\Google.Apis.dll
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\obj\Release\net6.0\PubTmp\Out\Google.Apis.Auth.PlatformServices.dll
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\obj\Release\net6.0\PubTmp\Out\Google.Apis.Auth.dll
+C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\obj\Release\net6.0\PubTmp\Out\Google.Apis.Core.dll
 C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\obj\Release\net6.0\PubTmp\Out\Humanizer.dll
 C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\obj\Release\net6.0\PubTmp\Out\Marvin.Cache.Headers.dll
 C:\Users\Fatih Furkan Arslan\Desktop\Github\ArticlesOriginAPI\BlogProject.API\obj\Release\net6.0\PubTmp\Out\MessagePack.dll
